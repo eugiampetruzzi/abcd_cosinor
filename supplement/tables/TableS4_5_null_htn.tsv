@@ -1,0 +1,13 @@
+Cell	Parameter	N at-risk	N incident	OR (per SD)	95% CI	p
+Depression → Hypertension	mesor	311	46	1.33	[0.95, 1.87]	0.095
+Depression → Hypertension	amplitude	311	46	0.98	[0.68, 1.40]	0.900
+Depression → Hypertension	acrophase	311	46	1.35	[0.93, 1.95]	0.110
+Depression → Hypertension	SD daily mesor	261	38	0.93	[0.68, 1.27]	0.648
+Depression → Hypertension	SD daily amplitude	261	38	1.18	[0.85, 1.64]	0.315
+Depression → Hypertension	SD daily acrophase	261	38	1.00	[0.75, 1.32]	0.978
+Obesity → Hypertension	mesor	999	182	1.14	[0.96, 1.37]	0.143
+Obesity → Hypertension	amplitude	999	182	1.16	[0.98, 1.38]	0.092
+Obesity → Hypertension	acrophase	999	182	1.06	[0.91, 1.24]	0.444
+Obesity → Hypertension	SD daily mesor	831	140	0.84	[0.69, 1.03]	0.102
+Obesity → Hypertension	SD daily amplitude	831	140	0.95	[0.79, 1.14]	0.572
+Obesity → Hypertension	SD daily acrophase	831	140	0.84	[0.71, 1.00]	0.050

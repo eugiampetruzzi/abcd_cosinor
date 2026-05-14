@@ -1,0 +1,75 @@
+==============================================================================
+Multi-component cosinor sensitivity
+==============================================================================
+
+--- Section 1. Per-participant OLS cosinor fits (1-comp vs 2-comp) ---
+  Hourly-profile rows = 173,403; unique subjects = 7,230
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/multicomponent_blups.csv
+  N participants fit:              7,188
+  Converged single-component:      7,188 (100.0%)
+  Converged multi-component:       7,188 (100.0%)
+  Median R² single-component:      0.847
+  Median R² multi-component:       0.911
+  Median ΔR² (multi − single):     0.053
+  Participants with amp12/amp24 > 0.25 (meaningful 12-h component): 50.4%
+  Correlation single↔multi:  mesor r = 1.000; amp24 r = 1.000; acro24 r = 1.000
+
+--- Section 2. Primary incidence under multi-component (plus single-component for direct comparison) ---
+
+  depression: n = 4,176; events = 462
+    [2-comp] mesor           OR = 1.13, 95% CI [1.02, 1.25], p = 0.0165
+    [2-comp] amplitude_24    OR = 1.02, 95% CI [0.93, 1.12], p = 0.719
+    [2-comp] acrophase_24    OR = 0.95, 95% CI [0.87, 1.04], p = 0.279
+    [2-comp] amplitude_12    OR = 1.08, 95% CI [0.99, 1.19], p = 0.0963
+    [2-comp] acrophase_12    OR = 1.18, 95% CI [1.04, 1.34], p = 0.00783
+    [1-comp] mesor           OR = 1.13, 95% CI [1.02, 1.25], p = 0.0165
+    [1-comp] amplitude_24    OR = 1.02, 95% CI [0.93, 1.12], p = 0.719
+    [1-comp] acrophase_24    OR = 0.95, 95% CI [0.87, 1.04], p = 0.279
+
+  obesity: n = 3,908; events = 453
+    [2-comp] mesor           OR = 1.28, 95% CI [1.16, 1.42], p = 1.22e-06
+    [2-comp] amplitude_24    OR = 0.91, 95% CI [0.82, 1.00], p = 0.0582
+    [2-comp] acrophase_24    OR = 1.13, 95% CI [1.03, 1.25], p = 0.0109
+    [2-comp] amplitude_12    OR = 1.03, 95% CI [0.93, 1.13], p = 0.575
+    [2-comp] acrophase_12    OR = 1.08, 95% CI [0.97, 1.21], p = 0.175
+    [1-comp] mesor           OR = 1.28, 95% CI [1.16, 1.42], p = 1.22e-06
+    [1-comp] amplitude_24    OR = 0.91, 95% CI [0.82, 1.00], p = 0.0582
+    [1-comp] acrophase_24    OR = 1.13, 95% CI [1.03, 1.25], p = 0.0109
+
+  hypertension: n = 2,653; events = 266
+    [2-comp] mesor           OR = 1.31, 95% CI [1.14, 1.51], p = 0.000163
+    [2-comp] amplitude_24    OR = 0.94, 95% CI [0.83, 1.07], p = 0.357
+    [2-comp] acrophase_24    OR = 1.16, 95% CI [1.02, 1.32], p = 0.0239
+    [2-comp] amplitude_12    OR = 0.94, 95% CI [0.83, 1.07], p = 0.349
+    [2-comp] acrophase_12    OR = 1.07, 95% CI [0.92, 1.25], p = 0.372
+    [1-comp] mesor           OR = 1.31, 95% CI [1.14, 1.51], p = 0.000163
+    [1-comp] amplitude_24    OR = 0.94, 95% CI [0.83, 1.07], p = 0.357
+    [1-comp] acrophase_24    OR = 1.16, 95% CI [1.02, 1.32], p = 0.0239
+
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/multicomponent_incidence.csv
+
+--- Section 3. Side-by-side single vs multi (shared predictors) ---
+
+  depression:
+    mesor           1-comp OR = 1.13 [1.02, 1.25], p = 0.0165  || 2-comp OR = 1.13 [1.02, 1.25], p = 0.0165  
+    amplitude_24    1-comp OR = 1.02 [0.93, 1.12], p = 0.719  || 2-comp OR = 1.02 [0.93, 1.12], p = 0.719  
+    acrophase_24    1-comp OR = 0.95 [0.87, 1.04], p = 0.279  || 2-comp OR = 0.95 [0.87, 1.04], p = 0.279  
+
+  obesity:
+    mesor           1-comp OR = 1.28 [1.16, 1.42], p = 1.22e-06  || 2-comp OR = 1.28 [1.16, 1.42], p = 1.22e-06  
+    amplitude_24    1-comp OR = 0.91 [0.82, 1.00], p = 0.0582  || 2-comp OR = 0.91 [0.82, 1.00], p = 0.0582  
+    acrophase_24    1-comp OR = 1.13 [1.03, 1.25], p = 0.0109  || 2-comp OR = 1.13 [1.03, 1.25], p = 0.0109  
+
+  hypertension:
+    mesor           1-comp OR = 1.31 [1.14, 1.51], p = 0.000163  || 2-comp OR = 1.31 [1.14, 1.51], p = 0.000163  
+    amplitude_24    1-comp OR = 0.94 [0.83, 1.07], p = 0.357  || 2-comp OR = 0.94 [0.83, 1.07], p = 0.357  
+    acrophase_24    1-comp OR = 1.16 [1.02, 1.32], p = 0.0239  || 2-comp OR = 1.16 [1.02, 1.32], p = 0.0239  
+
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/multicomponent_vs_single_comparison.csv
+
+--- Section 4. Fit-quality comparison ---
+  Median ΔR² (multi − single):              0.0533
+  Mean ΔR²:                                  0.0679
+  Participants with ΔR² ≥ 0.05:              3,822 (53.2%)
+  Participants with ΔR² ≥ 0.01:              6,500 (90.4%)
+  Participants where multi AIC < single AIC: 6,016 (83.7%)

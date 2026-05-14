@@ -1,0 +1,41 @@
+statistic	value	unit
+n_valid_BLUPs	7230.0	
+R2_median	0.8455334331315477	
+R2_mean	0.8196316530754083	
+R2_SD	0.11375749964113847	
+R2_IQR_lo	0.7777568989589843	
+R2_IQR_hi	0.893695913067692	
+R2_pct_gt_0.70	88.96265560165975	%
+R2_pct_gt_0.50	97.78699861687413	%
+mesor_mean	82.374500260773	bpm
+mesor_SD	7.6792961942197415	bpm
+mesor_min	57.317497388764025	bpm
+mesor_max	122.51924634376627	bpm
+amplitude_mean	12.176081975694089	bpm
+amplitude_SD	3.0056890937878	bpm
+amplitude_min	0.8674672233479482	bpm
+amplitude_max	24.790511272349946	bpm
+acrophase_circular_mean	14.946521501112477	hr
+acrophase_circular_SD	1.2165463055533063	hr
+acrophase_min	0.22181714774818367	hr
+acrophase_max	22.838141577806553	hr
+mesor_cuff_r	0.5901708206438461	
+mesor_cuff_n	3392.0	
+mesor_cuff_p	1.495112e-317	
+within_person_n_ge7days	6283.0	
+within_person_pct_ge7days	86.90179806362379	%
+SD_daily_mesor_mean	4.089907592189708	bpm
+SD_daily_mesor_SD	1.3745472054002734	bpm
+SD_daily_mesor_median	3.8618784379753985	bpm
+SD_daily_mesor_IQR_lo	3.1670658346024574	bpm
+SD_daily_mesor_IQR_hi	4.75601372816349	bpm
+SD_daily_amplitude_mean	3.6780962716833576	bpm
+SD_daily_amplitude_SD	1.0310780407208948	bpm
+SD_daily_amplitude_median	3.566521016093162	bpm
+SD_daily_amplitude_IQR_lo	2.973914929908691	bpm
+SD_daily_amplitude_IQR_hi	4.246802981680187	bpm
+SD_daily_acrophase_mean	1.4253028116586999	hr
+SD_daily_acrophase_SD	0.584373845289796	hr
+SD_daily_acrophase_median	1.3064431425388034	hr
+SD_daily_acrophase_IQR_lo	1.0436841501043297	hr
+SD_daily_acrophase_IQR_hi	1.6548283908699788	hr

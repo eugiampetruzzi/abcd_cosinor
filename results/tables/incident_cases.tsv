@@ -1,0 +1,4 @@
+outcome	pre_waves_required_clean	strict_n_total	strict_n_cases	strict_W3_first	strict_W4_first	analytic_n	analytic_cases	analytic_W3_first	analytic_W4_first
+DSM Depression	ses-00A,ses-02A	5951	616	436	180	4205	463	320	143
+Obesity	ses-00A,ses-02A	4980	581	448	133	3932	457	346	111
+Hypertension	ses-02A	3643	350	249	101	2669	270	183	87

@@ -1,0 +1,7 @@
+Index condition	Predicted condition	N at-risk	N incident	Estimable	Reason if not
+Depression	Obesity	386	71	Yes	
+Depression	Hypertension	311	46	Yes	
+Obesity	Depression	1553	174	Yes	
+Obesity	Hypertension	999	182	Yes	
+Hypertension	Depression	51	7	No	Blood pressure not assessed at Wave 1; ≤ 8 incident cases in at-risk cohort
+Hypertension	Obesity	36	8	No	Blood pressure not assessed at Wave 1; ≤ 8 incident cases in at-risk cohort

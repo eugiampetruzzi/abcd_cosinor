@@ -1,0 +1,10 @@
+Outcome	Comparison	ΔAUC	LRT χ²	df	p (LRT)
+Depression	M2: HR + activity vs M1: HR only	+0.018	5.61	2	0.060
+Depression	M3: HR + sleep vs M1: HR only	+0.006	2.20	2	0.333
+Depression	M4: HR + activity + sleep vs M1: HR only	+0.023	7.98	4	0.092
+Obesity	M2: HR + activity vs M1: HR only	+0.063	51.29	2	< .001
+Obesity	M3: HR + sleep vs M1: HR only	-0.001	1.16	2	0.560
+Obesity	M4: HR + activity + sleep vs M1: HR only	+0.063	52.93	4	< .001
+Hypertension	M2: HR + activity vs M1: HR only	+0.028	17.14	2	< .001
+Hypertension	M3: HR + sleep vs M1: HR only	+0.014	6.41	2	0.041
+Hypertension	M4: HR + activity + sleep vs M1: HR only	+0.040	23.37	4	< .001

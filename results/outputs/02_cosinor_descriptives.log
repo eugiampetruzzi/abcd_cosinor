@@ -1,0 +1,32 @@
+==============================================================================
+Cosinor descriptives  ·  Wave-2 typical-day BLUPs
+==============================================================================
+  n participants with valid BLUPs = 7,230
+
+--- Per-participant R² ---
+  median = 0.846
+  mean ± SD = 0.820 ± 0.114
+  IQR = [0.778, 0.894]
+  fraction R² > .70 = 89.0%
+  fraction R² > .50 = 97.8%
+
+--- BLUP descriptives ---
+  Mesor      M ± SD = 82.37 ± 7.68 bpm   range = [57.32, 122.52] bpm
+  Amplitude  M ± SD = 12.18 ± 3.01 bpm   range = [0.87, 24.79] bpm
+  Acrophase  circular M = 14.95 hr   circular SD = 1.22 hr   (linear range = [0.22, 22.84] hr)
+
+--- Mesor ↔ cuff-HR correlation (concurrent Wave-2) ---
+  n with both measures = 3,392
+  r = 0.590, p = 1.5e-317
+
+--- Within-person cohort (≥7 valid daily cosinor fits) ---
+  n with ≥7 valid daily fits = 6,283 of 7,230 (86.9%)
+  median per-day R² (across-day median per subject) = 0.622
+  median usable days per subject = 16
+
+--- Within-person SD distributions ---
+  SD daily mesor      M ± SD = 4.09 ± 1.37 bpm   median = 3.86   IQR = [3.17, 4.76]
+  SD daily amplitude  M ± SD = 3.68 ± 1.03 bpm   median = 3.57   IQR = [2.97, 4.25]
+  SD daily acrophase  M ± SD = 1.43 ± 0.58 hr   median = 1.31   IQR = [1.04, 1.65]
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/cosinor_descriptives.tsv

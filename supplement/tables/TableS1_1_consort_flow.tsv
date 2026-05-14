@@ -1,0 +1,5 @@
+Step	N retained	N dropped	% retained	Definition
+Enrolled in Wave-2 Novel Technologies sub-study	8093		100.0	All participants with any Wave-2 Fitbit session in the cohort manifest.
+Met ≥3 valid wear days (4-of-4 quadrant rule)	7230	863.0	89.3	≥3 days with ≥600 non-zero HR minutes AND HR coverage in all four 6-h quadrants.
+Met wear-period density ≥ 0.50	6388	842.0	78.9	Valid days / calendar span from first to last valid day ≥ 0.50 (Damme et al., 2024).
+Cosinor model converged → analytic cohort	7230	-842.0	89.3	Per-participant mixed-effects single-component cosinor fit converged.

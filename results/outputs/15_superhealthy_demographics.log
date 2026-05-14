@@ -1,0 +1,44 @@
+==============================================================================
+Super-healthy vs. standard-but-not-super-healthy HC demographics
+==============================================================================
+
+  Super-healthy HCs:                  n = 2,987
+  Standard-but-not-super-healthy HCs: n = 2,712
+    (Of 7,230 cosinor-pass total; 5,605 are HCs in at least one primary frame.)
+
+Continuous comparisons:
+  Age at Wave 2 (yr)                   super-healthy: 12.03 (SD 0.66) (n=2,987)  |  not-SH HC: 11.97 (SD 0.65) (n=2,712)  |  t = +3.55, p = 0.000389, d = +0.094 (negligible)
+  Pubertal stage (PDS, Wave 2)         super-healthy: 2.65 (SD 0.89) (n=2,967)  |  not-SH HC: 2.96 (SD 0.94) (n=2,674)  |  t = -12.75, p = 9.72e-37, d = -0.341 (small)
+  Wave-2 mean daily sleep (min)        super-healthy: 1742.31 (SD 566.75) (n=2,021)  |  not-SH HC: 1618.48 (SD 584.90) (n=1,806)  |  t = +6.63, p = 3.72e-11, d = +0.215 (small)
+  Wave-2 mean daily WASO (min)         super-healthy: 58.03 (SD 11.02) (n=2,021)  |  not-SH HC: 55.83 (SD 11.23) (n=1,806)  |  t = +6.10, p = 1.17e-09, d = +0.198 (negligible)
+  Wave-2 mean daily steps              super-healthy: 9887.36 (SD 3249.13) (n=2,909)  |  not-SH HC: 9089.36 (SD 3070.94) (n=2,620)  |  t = +9.39, p = 8.91e-21, d = +0.252 (small)
+  Wave-2 mean daily METs               super-healthy: 1.98 (SD 0.27) (n=2,909)  |  not-SH HC: 2.00 (SD 0.29) (n=2,622)  |  t = -1.76, p = 0.0791, d = -0.048 (negligible)
+
+Categorical comparisons:
+  Sex                                  n_SH = 2,987, n_notSH = 2,712;  chi² = 26.72, p = 2.35e-07, V = 0.068 (negligible)
+    super-healthy top categories:  Male: 1514 (51%); Female: 1473 (49%)
+    not-super-healthy top:         Female: 1524 (56%); Male: 1188 (44%)
+  Race/ethnicity (collapsed)           n_SH = 2,987, n_notSH = 2,712;  chi² = 127.32, p = 1.46e-26, V = 0.149 (small)
+    super-healthy top categories:  White: 1991 (67%); Hispanic: 418 (14%); Other: 265 (9%); Black: 232 (8%); Asian: 81 (3%)
+    not-super-healthy top:         White: 1483 (55%); Hispanic: 540 (20%); Black: 359 (13%); Other: 298 (11%); Asian: 32 (1%)
+  Household income (3 levels)          n_SH = 2,987, n_notSH = 2,712;  chi² = 200.78, p = 2.56e-42, V = 0.188 (small)
+    super-healthy top categories:  >100k: 1553 (52%); 50–100k: 839 (28%); <50k: 416 (14%); Decline: 103 (3%); DK: 76 (3%)
+    not-super-healthy top:         >100k: 993 (37%); 50–100k: 801 (30%); <50k: 734 (27%); Decline: 94 (3%); DK: 90 (3%)
+  Parent education                     n_SH = 2,987, n_notSH = 2,712;  chi² = 155.60, p = 1.28e-32, V = 0.165 (small)
+    super-healthy top categories:  Grad/professional: 1331 (45%); Bachelor's: 914 (31%); Some college: 558 (19%); HS/GED: 135 (5%); <HS: 49 (2%)
+    not-super-healthy top:         Grad/professional: 909 (34%); Some college: 747 (28%); Bachelor's: 731 (27%); HS/GED: 217 (8%); <HS: 108 (4%)
+  Study site                           n_SH = 2,987, n_notSH = 2,712;  chi² = 129.65, p = 1.18e-17, V = 0.151 (small)
+    super-healthy top categories:  16: 311 (10%); 14: 245 (8%); 2: 242 (8%); 20: 240 (8%); 4: 185 (6%)
+    not-super-healthy top:         16: 248 (9%); 4: 228 (8%); 20: 202 (7%); 10: 184 (7%); 13: 181 (7%)
+
+Bonferroni multiplier: 11
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/superhealthy_demographics.csv
+
+Effect-size flags (continuous |d| ≥ 0.20 or categorical V ≥ 0.10):
+  Pubertal stage (PDS, Wave 2)         Cohen's d = -0.341 (small); p = 9.72e-37; p_bonf = 1.07e-35
+  Wave-2 mean daily sleep (min)        Cohen's d = +0.215 (small); p = 3.72e-11; p_bonf = 4.09e-10
+  Wave-2 mean daily steps              Cohen's d = +0.252 (small); p = 8.91e-21; p_bonf = 9.8e-20
+  Race/ethnicity (collapsed)           Cramer's V = +0.149 (small); p = 1.46e-26; p_bonf = 1.6e-25
+  Household income (3 levels)          Cramer's V = +0.188 (small); p = 2.56e-42; p_bonf = 2.81e-41
+  Parent education                     Cramer's V = +0.165 (small); p = 1.28e-32; p_bonf = 1.41e-31
+  Study site                           Cramer's V = +0.151 (small); p = 1.18e-17; p_bonf = 1.3e-16

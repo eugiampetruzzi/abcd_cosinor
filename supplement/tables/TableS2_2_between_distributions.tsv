@@ -1,0 +1,4 @@
+Parameter	Unit	M	SD	Median	IQR	Min	Max
+Mesor	bpm	82.37	7.68	82.60	[77.25, 87.63]	57.32	122.52
+Amplitude	bpm	12.18	3.01	12.13	[10.16, 14.09]	0.87	24.79
+Acrophase	clock hour	14.96	1.26	14.78	[14.14, 15.59]	0.22	22.84

@@ -1,0 +1,4 @@
+Parameter	Unit	N	M	SD	Median	IQR
+SD of daily mesor	bpm	6283	4.09	1.37	3.86	[3.17, 4.76]
+SD of daily amplitude	bpm	6283	3.68	1.03	3.57	[2.97, 4.25]
+SD of daily acrophase	hr	6283	1.43	0.58	1.31	[1.04, 1.65]

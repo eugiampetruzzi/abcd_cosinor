@@ -1,0 +1,4 @@
+Parameter	M1: HR only — OR (95% CI)	M1: HR only — p	M2: HR + activity — OR (95% CI)	M2: HR + activity — p	M3: HR + sleep — OR (95% CI)	M3: HR + sleep — p	M4: HR + activity + sleep — OR (95% CI)	M4: HR + activity + sleep — p
+HR mesor	1.26 [1.12, 1.41]	< .001	1.28 [1.14, 1.45]	< .001	1.25 [1.11, 1.40]	< .001	1.26 [1.12, 1.43]	< .001
+HR amplitude	0.85 [0.75, 0.96]	0.010	0.71 [0.61, 0.82]	< .001	0.85 [0.75, 0.97]	0.013	0.71 [0.61, 0.83]	< .001
+HR acrophase	1.16 [1.03, 1.31]	0.015	1.16 [1.02, 1.31]	0.023	1.15 [1.02, 1.30]	0.020	1.15 [1.01, 1.30]	0.032

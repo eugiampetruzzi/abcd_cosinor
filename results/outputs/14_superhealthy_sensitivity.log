@@ -1,0 +1,58 @@
+==============================================================================
+Super-healthy HC sensitivity
+==============================================================================
+
+Section 1. Super-healthy cohort definition
+  Cosinor-pass cohort:                     n = 7,230
+  Super-healthy (clean on all 3, all obs): n = 2,987 (41.3%)
+
+Section 2 + 4. Logistic regression with super-healthy HCs
+
+  === Depression ===
+    n_cases = 463;  n_HC primary = 3,742;  n_HC super-healthy = 1,979 (52.9% kept)
+    [between] mesor        OR = 1.31, 95% CI [1.18, 1.46], p = 7.67e-07  (events = 463, hc = 1979)
+    [between] amplitude    OR = 0.91, 95% CI [0.82, 1.01], p = 0.0682  (events = 463, hc = 1979)
+    [between] acrophase    OR = 1.09, 95% CI [0.98, 1.21], p = 0.0961  (events = 463, hc = 1979)
+    [within ] SD daily mesor         OR = 1.18, 95% CI [1.07, 1.31], p = 0.00092  (events = 410, hc = 1793)
+    [within ] SD daily amplitude     OR = 1.03, 95% CI [0.93, 1.14], p = 0.584  (events = 410, hc = 1793)
+    [within ] SD daily acrophase     OR = 1.28, 95% CI [1.15, 1.42], p = 5.59e-06  (events = 410, hc = 1793)
+
+  === Obesity ===
+    n_cases = 457;  n_HC primary = 3,475;  n_HC super-healthy = 2,692 (77.5% kept)
+    [between] mesor        OR = 1.34, 95% CI [1.21, 1.49], p = 2.92e-08  (events = 457, hc = 2692)
+    [between] amplitude    OR = 0.92, 95% CI [0.83, 1.01], p = 0.0853  (events = 457, hc = 2692)
+    [between] acrophase    OR = 1.14, 95% CI [1.03, 1.26], p = 0.00961  (events = 457, hc = 2692)
+    [within ] SD daily mesor         OR = 1.19, 95% CI [1.08, 1.31], p = 0.00025  (events = 407, hc = 2434)
+    [within ] SD daily amplitude     OR = 1.12, 95% CI [1.02, 1.24], p = 0.0227  (events = 407, hc = 2434)
+    [within ] SD daily acrophase     OR = 1.21, 95% CI [1.10, 1.33], p = 6.35e-05  (events = 407, hc = 2434)
+
+  === Hypertension ===
+    n_cases = 270;  n_HC primary = 2,399;  n_HC super-healthy = 1,214 (50.6% kept)
+    [between] mesor        OR = 1.54, 95% CI [1.33, 1.78], p = 7.64e-09  (events = 270, hc = 1214)
+    [between] amplitude    OR = 0.83, 95% CI [0.73, 0.96], p = 0.00995  (events = 270, hc = 1214)
+    [between] acrophase    OR = 1.28, 95% CI [1.12, 1.46], p = 0.000242  (events = 270, hc = 1214)
+    [within ] SD daily mesor         OR = 1.16, 95% CI [1.00, 1.34], p = 0.048  (events = 221, hc = 1084)
+    [within ] SD daily amplitude     OR = 1.04, 95% CI [0.91, 1.18], p = 0.599  (events = 221, hc = 1084)
+    [within ] SD daily acrophase     OR = 1.28, 95% CI [1.12, 1.46], p = 0.000271  (events = 221, hc = 1084)
+
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/superhealthy_incidence.csv
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/superhealthy_within_person.csv
+
+Section 3. Side-by-side: primary vs super-healthy
+
+  Depression:
+    mesor       primary OR = 1.12 [1.01, 1.24], p = 0.0249  ||  super-healthy OR = 1.31 [1.18, 1.46], p = 7.67e-07  <-- OR shift > 0.05
+    amplitude   primary OR = 1.02 [0.93, 1.13], p = 0.618  ||  super-healthy OR = 0.91 [0.82, 1.01], p = 0.0682  <-- OR shift > 0.05
+    acrophase   primary OR = 0.96 [0.88, 1.06], p = 0.427  ||  super-healthy OR = 1.09 [0.98, 1.21], p = 0.0961  <-- OR shift > 0.05
+
+  Obesity:
+    mesor       primary OR = 1.29 [1.17, 1.43], p = 5.32e-07  ||  super-healthy OR = 1.34 [1.21, 1.49], p = 2.92e-08
+    amplitude   primary OR = 0.91 [0.83, 1.01], p = 0.0708  ||  super-healthy OR = 0.92 [0.83, 1.01], p = 0.0853
+    acrophase   primary OR = 1.14 [1.03, 1.25], p = 0.00944  ||  super-healthy OR = 1.14 [1.03, 1.26], p = 0.00961
+
+  Hypertension:
+    mesor       primary OR = 1.30 [1.13, 1.49], p = 0.000199  ||  super-healthy OR = 1.54 [1.33, 1.78], p = 7.64e-09  <-- OR shift > 0.05
+    amplitude   primary OR = 0.95 [0.83, 1.08], p = 0.426  ||  super-healthy OR = 0.83 [0.73, 0.96], p = 0.00995  <-- OR shift > 0.05; sig flip at p < .05
+    acrophase   primary OR = 1.17 [1.03, 1.33], p = 0.0196  ||  super-healthy OR = 1.28 [1.12, 1.46], p = 0.000242  <-- OR shift > 0.05
+
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/superhealthy_vs_primary_comparison.csv

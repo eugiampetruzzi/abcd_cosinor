@@ -1,0 +1,7 @@
+Parameter	N at-risk	N incident	OR (per SD)	95% CI	p
+Between-person mesor	386	71	1.41	[1.07, 1.86]	0.015
+Between-person amplitude	386	71	1.11	[0.87, 1.41]	0.413
+Between-person acrophase	386	71	1.03	[0.81, 1.32]	0.790
+SD daily mesor	338	62	1.27	[0.98, 1.65]	0.076
+SD daily amplitude	338	62	1.20	[0.93, 1.54]	0.156
+SD daily acrophase	338	62	0.80	[0.62, 1.02]	0.077

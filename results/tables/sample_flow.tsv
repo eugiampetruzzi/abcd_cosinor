@@ -1,0 +1,6 @@
+step	n
+Wave-2 Novel Technologies sub-study enrolled	8093
+Met Fitbit data-quality criteria (4-of-4, ≥3 days)	7230
+Has Wave-2 cosinor BLUP (sanity check)	7230
+Has any outcome at W3 or W4 (CBCL or BMI or BP)	9887
+Analytic pool (wearable-pass ∩ has-outcome)	6601

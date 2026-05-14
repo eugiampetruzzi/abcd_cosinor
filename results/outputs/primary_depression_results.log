@@ -1,0 +1,20 @@
+==============================================================================
+Primary analyses · DSM Depression
+==============================================================================
+  Analytic cohort: n = 4,205, incident cases = 463 (11.0%)
+
+--- Between-person analyses ---
+  (no multiple-comparison correction across the three rhythm parameters)
+  Typical-day mesor         OR = 1.12, 95% CI [1.01, 1.24], p = 0.0249
+  Typical-day amplitude     OR = 1.02, 95% CI [0.93, 1.13], p = 0.618
+  Typical-day acrophase     OR = 0.96, 95% CI [0.88, 1.06], p = 0.427
+
+--- Within-person analyses ---
+  SD daily mesor            n = 3703  cases = 410  univariate OR = 1.12, 95% CI [1.02, 1.23], p = 0.0136
+  SD daily mesor            joint with mesor: feature OR = 1.13 [1.03, 1.23], p = 0.00953; mesor OR = 1.15, p = 0.00898
+  SD daily amplitude        n = 3703  cases = 410  univariate OR = 1.04, 95% CI [0.94, 1.14], p = 0.468
+  SD daily amplitude        joint with mesor: feature OR = 1.07 [0.97, 1.18], p = 0.187; mesor OR = 1.16, p = 0.00663
+  SD daily acrophase        n = 3703  cases = 410  univariate OR = 1.15, 95% CI [1.05, 1.25], p = 0.00249
+  SD daily acrophase        joint with mesor: feature OR = 1.15 [1.05, 1.25], p = 0.00275; mesor OR = 1.15, p = 0.0118
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/primary_depression_results.tsv

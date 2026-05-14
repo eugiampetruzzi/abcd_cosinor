@@ -1,0 +1,20 @@
+==============================================================================
+Primary analyses · Overweight/Obesity
+==============================================================================
+  Analytic cohort: n = 3,932, incident cases = 457 (11.6%)
+
+--- Between-person analyses ---
+  (no multiple-comparison correction across the three rhythm parameters)
+  Typical-day mesor         OR = 1.29, 95% CI [1.17, 1.43], p = 5.32e-07
+  Typical-day amplitude     OR = 0.91, 95% CI [0.83, 1.01], p = 0.0708
+  Typical-day acrophase     OR = 1.14, 95% CI [1.03, 1.25], p = 0.00944
+
+--- Within-person analyses ---
+  SD daily mesor            n = 3534  cases = 407  univariate OR = 1.17, 95% CI [1.07, 1.28], p = 0.000607
+  SD daily mesor            joint with mesor: feature OR = 1.18 [1.08, 1.29], p = 0.000168; mesor OR = 1.30, p = 1.1e-06
+  SD daily amplitude        n = 3534  cases = 407  univariate OR = 1.12, 95% CI [1.02, 1.24], p = 0.0167
+  SD daily amplitude        joint with mesor: feature OR = 1.20 [1.08, 1.33], p = 0.000679; mesor OR = 1.35, p = 1e-07
+  SD daily acrophase        n = 3534  cases = 407  univariate OR = 1.16, 95% CI [1.06, 1.26], p = 0.000846
+  SD daily acrophase        joint with mesor: feature OR = 1.17 [1.07, 1.27], p = 0.000385; mesor OR = 1.30, p = 1.19e-06
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/primary_obesity_results.tsv

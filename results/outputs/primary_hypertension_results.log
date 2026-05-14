@@ -1,0 +1,20 @@
+==============================================================================
+Primary analyses · Hypertension
+==============================================================================
+  Analytic cohort: n = 2,669, incident cases = 270 (10.1%)
+
+--- Between-person analyses ---
+  (no multiple-comparison correction across the three rhythm parameters)
+  Typical-day mesor         OR = 1.30, 95% CI [1.13, 1.49], p = 0.000199
+  Typical-day amplitude     OR = 0.95, 95% CI [0.83, 1.08], p = 0.426
+  Typical-day acrophase     OR = 1.17, 95% CI [1.03, 1.33], p = 0.0196
+
+--- Within-person analyses ---
+  SD daily mesor            n = 2323  cases = 221  univariate OR = 1.08, 95% CI [0.94, 1.24], p = 0.287
+  SD daily mesor            joint with mesor: feature OR = 1.09 [0.95, 1.26], p = 0.207; mesor OR = 1.28, p = 0.00135
+  SD daily amplitude        n = 2323  cases = 221  univariate OR = 1.04, 95% CI [0.92, 1.18], p = 0.517
+  SD daily amplitude        joint with mesor: feature OR = 1.10 [0.97, 1.24], p = 0.15; mesor OR = 1.30, p = 0.00093
+  SD daily acrophase        n = 2323  cases = 221  univariate OR = 1.09, 95% CI [0.97, 1.22], p = 0.136
+  SD daily acrophase        joint with mesor: feature OR = 1.08 [0.97, 1.21], p = 0.163; mesor OR = 1.27, p = 0.00194
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/primary_hypertension_results.tsv

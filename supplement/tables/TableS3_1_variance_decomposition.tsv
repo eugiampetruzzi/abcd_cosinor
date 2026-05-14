@@ -1,0 +1,4 @@
+Component	Mean R² (SD)	Median R²	N
+24-hour only	0.823 (0.109)	0.847	7188
+24 + 12-hour joint	0.891 (0.079)	0.911	7188
+Added variance from 12-hour	0.068 (0.059)	0.053	7188
