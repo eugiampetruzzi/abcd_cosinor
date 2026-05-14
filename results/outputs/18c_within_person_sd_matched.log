@@ -1,0 +1,59 @@
+==============================================================================
+Within-person SD-matched adjustment, three-signal version
+  (mirrors script 18 by decomposing activity into steps + METs and
+   using daily proportion-of-wear-time-asleep instead of duration)
+==============================================================================
+  SD-of-daily covariates available: n = 6,636 participants
+
+=== Depression ===
+  with new behavioral SDs:    n = 2,325
+  with within-person rhythm + new SDs: n = 2,229
+    SD daily mesor          n = 2,229, cases = 410
+      base: OR = 1.18 [1.07, 1.31], p = 0.000916,  AUC = 0.563
+      adj : OR = 1.02 [0.90, 1.16], p = 0.769,  AUC = 0.640  (ΔAUC = +0.0771, LRT χ²(3) = 68.29, p = 9.9e-15)
+    SD daily amplitude      n = 2,229, cases = 410
+      base: OR = 1.03 [0.93, 1.14], p = 0.598,  AUC = 0.527
+      adj : OR = 0.86 [0.74, 1.00], p = 0.049,  AUC = 0.639  (ΔAUC = +0.1124, LRT χ²(3) = 83.87, p = 4.53e-18)
+    SD daily acrophase      n = 2,229, cases = 410
+      base: OR = 1.29 [1.17, 1.42], p = 6.99e-07,  AUC = 0.578
+      adj : OR = 1.21 [1.09, 1.35], p = 0.000434,  AUC = 0.650  (ΔAUC = +0.0724, LRT χ²(3) = 67.10, p = 1.78e-14)
+
+=== Obesity ===
+  with new behavioral SDs:    n = 2,305
+  with within-person rhythm + new SDs: n = 2,226
+    SD daily mesor          n = 2,226, cases = 407
+      base: OR = 1.21 [1.09, 1.34], p = 0.000359,  AUC = 0.600
+      adj : OR = 1.07 [0.94, 1.22], p = 0.296,  AUC = 0.647  (ΔAUC = +0.0466, LRT χ²(3) = 48.05, p = 2.07e-10)
+    SD daily amplitude      n = 2,226, cases = 407
+      base: OR = 1.12 [1.00, 1.24], p = 0.0482,  AUC = 0.591
+      adj : OR = 0.93 [0.80, 1.08], p = 0.348,  AUC = 0.644  (ΔAUC = +0.0532, LRT χ²(3) = 56.64, p = 3.06e-12)
+    SD daily acrophase      n = 2,226, cases = 407
+      base: OR = 1.22 [1.10, 1.34], p = 9.33e-05,  AUC = 0.599
+      adj : OR = 1.17 [1.05, 1.29], p = 0.00387,  AUC = 0.649  (ΔAUC = +0.0505, LRT χ²(3) = 53.21, p = 1.66e-11)
+
+=== Hypertension ===
+  with new behavioral SDs:    n = 2,129
+  with within-person rhythm + new SDs: n = 2,040
+    SD daily mesor          n = 2,040, cases = 221
+      base: OR = 1.20 [1.04, 1.38], p = 0.0124,  AUC = 0.683
+      adj : OR = 0.95 [0.78, 1.16], p = 0.614,  AUC = 0.762  (ΔAUC = +0.0790, LRT χ²(3) = 106.22, p = 7.14e-23)
+    SD daily amplitude      n = 2,040, cases = 221
+      base: OR = 0.99 [0.87, 1.13], p = 0.924,  AUC = 0.664
+      adj : OR = 0.71 [0.56, 0.91], p = 0.00552,  AUC = 0.765  (ΔAUC = +0.1014, LRT χ²(3) = 127.27, p = 2.09e-27)
+    SD daily acrophase      n = 2,040, cases = 221
+      base: OR = 1.26 [1.11, 1.43], p = 0.000308,  AUC = 0.690
+      adj : OR = 1.12 [0.98, 1.28], p = 0.0899,  AUC = 0.765  (ΔAUC = +0.0748, LRT χ²(3) = 103.85, p = 2.31e-22)
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/within_person_sd_matched_3signal.tsv
+
+--- 18c (3-signal) vs 06b (2-covariate) side-by-side ---
+  Depression     SD daily mesor          06b adj OR = 1.10 (p = 0.14)  |  18c adj OR = 1.02 (p = 0.769, LRT p = 9.9e-15)
+  Depression     SD daily amplitude      06b adj OR = 0.87 (p = 0.0535)  |  18c adj OR = 0.86 (p = 0.049, LRT p = 4.53e-18)
+  Depression     SD daily acrophase      06b adj OR = 1.19 (p = 0.0077)  |  18c adj OR = 1.21 (p = 0.000434, LRT p = 1.78e-14)
+  Obesity        SD daily mesor          06b adj OR = 1.18 (p = 0.0058)  |  18c adj OR = 1.07 (p = 0.296, LRT p = 2.07e-10)
+  Obesity        SD daily amplitude      06b adj OR = 1.11 (p = 0.159)  |  18c adj OR = 0.93 (p = 0.348, LRT p = 3.06e-12)
+  Obesity        SD daily acrophase      06b adj OR = 1.17 (p = 0.00906)  |  18c adj OR = 1.17 (p = 0.00387, LRT p = 1.66e-11)
+  Hypertension   SD daily mesor          06b adj OR = 1.15 (p = 0.146)  |  18c adj OR = 0.95 (p = 0.614, LRT p = 7.14e-23)
+  Hypertension   SD daily amplitude      06b adj OR = 0.89 (p = 0.303)  |  18c adj OR = 0.71 (p = 0.00552, LRT p = 2.09e-27)
+  Hypertension   SD daily acrophase      06b adj OR = 1.28 (p = 0.0029)  |  18c adj OR = 1.12 (p = 0.0899, LRT p = 2.31e-22)
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/within_person_sd_matched_3signal.md

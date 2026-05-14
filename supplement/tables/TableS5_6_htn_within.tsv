@@ -1,4 +1,4 @@
 Parameter	Unadjusted OR (95% CI)	Unadjusted p	Adjusted OR (95% CI)	Adjusted p	N	N cases
-SD daily mesor	1.12 [0.94, 1.33]	0.208	1.05 [0.88, 1.27]	0.576	1685	154
-SD daily amplitude	1.01 [0.85, 1.19]	0.939	0.95 [0.78, 1.15]	0.576	1685	154
-SD daily acrophase	1.10 [0.95, 1.27]	0.208	1.00 [0.85, 1.18]	0.984	1685	154
+SD daily mesor	1.20 [1.01, 1.42]	0.037	1.15 [0.95, 1.38]	0.146	950	154
+SD daily amplitude	1.00 [0.83, 1.20]	0.978	0.89 [0.71, 1.11]	0.303	950	154
+SD daily acrophase	1.30 [1.11, 1.53]	0.001	1.28 [1.09, 1.51]	0.003	950	154

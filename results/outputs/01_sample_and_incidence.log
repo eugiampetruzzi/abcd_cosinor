@@ -1,45 +1,42 @@
 ==============================================================================
-Step 1–3: Participant-flow cascade
+Step 1: Participant flow + per-wave outcome matrix
 ==============================================================================
   Wave-2 Novel Technologies sub-study enrolled             n = 8,093
   Met Fitbit data-quality criteria (4-of-4, ≥3 days)       n = 7,230
-  Has Wave-2 cosinor BLUP (sanity check)                   n = 7,230
+  Has Wave-2 cosinor BLUP                                  n = 7,230
   Has any outcome at W3 or W4 (CBCL or BMI or BP)          n = 9,887
   Analytic pool (wearable-pass ∩ has-outcome)              n = 6,601
 
-Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/sample_flow.tsv
+==============================================================================
+Step 2: Build per-wave outcome matrix and apply common-HC framework
+==============================================================================
+  participants with cosinor BLUP: 7,230
+  super-healthy at every observed wave:           n = 3,288
+  HC for depression/obesity (super-healthy + CBCL & BMI at W3/W4): n = 2,169
+  HC for hypertension (subset with BP at W3/W4):  n = 2,007
+  incident cases (canonical first-onset, target-outcome cleanness only):
+    dep = 463,  obesity = 457,  HTN = 270
+  participants who developed ≥1 of the 3:  n = 1,083
+  case overlap:
+    dep ∩ obesity = 60
+    dep ∩ HTN     = 22
+    obesity ∩ HTN = 30
+    all three     = 5
 
 ==============================================================================
-Per-outcome strict incidence (canonical definition)
+Step 3: Build per-outcome analytic frames (common HC + cases)
 ==============================================================================
 
---- DSM Depression ---
-  Strict incidence frame:        n = 5,951   cases =   616   (W3 first: 436, W4 first: 180)
-  Analytic sample (∩ covariates): n = 4,205   cases =   463   (W3 first: 320, W4 first: 143)
+--- Depression ---
+  analytic n = 2,467  cases = 463  HCs = 2,004  (W3 first: 320, W4 first: 143)
   wrote analytic_depression.tsv
 
 --- Obesity ---
-  Strict incidence frame:        n = 4,980   cases =   581   (W3 first: 448, W4 first: 133)
-  Analytic sample (∩ covariates): n = 3,932   cases =   457   (W3 first: 346, W4 first: 111)
+  analytic n = 2,461  cases = 457  HCs = 2,004  (W3 first: 346, W4 first: 111)
   wrote analytic_obesity.tsv
 
 --- Hypertension ---
-  Strict incidence frame:        n = 3,643   cases =   350   (W3 first: 249, W4 first: 101)
-  Analytic sample (∩ covariates): n = 2,669   cases =   270   (W3 first: 183, W4 first: 87)
+  analytic n = 2,274  cases = 270  HCs = 2,004  (W3 first: 183, W4 first: 87)
   wrote analytic_hypertension.tsv
 
-Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/incident_cases.tsv
-
-==============================================================================
-Verification against Methods text
-==============================================================================
-  Step                             expected     actual  match
-  Wave-2 sub-study enrolled           8,166      8,093  MISMATCH
-  Met wearable quality                7,230      7,230    OK
-  Has any outcome at W3/W4            6,601      6,601    OK
-  Depression analytic n               4,205      4,205    OK
-  Depression analytic cases             463        463    OK
-  Obesity analytic n                  3,932      3,932    OK
-  Obesity analytic cases                457        457    OK
-  Hypertension analytic n             2,669      2,669    OK
-  Hypertension analytic cases           270        270    OK
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/tables/incident_cases.tsv

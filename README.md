@@ -1,43 +1,53 @@
 # abcd_cosinor
 
-Wearable heart-rate rhythm as a prospective predictor of depression, obesity, and hypertension in adolescence.
+Companion code for *Heart rate rhythm from a wearable predicts depression and cardiometabolic illness in adolescence* (Giampetruzzi, Kircanski, & Gotlib).
 
-Companion code for the manuscript *Wearable Heart Rate Rhythm Predicts Depression and Cardiometabolic Illness in Adolescence*, using Wave-2 Fitbit data from the ABCD Novel Technologies sub-study to fit per-participant single-component cosinor models and test whether typical-day rhythm features (mesor, amplitude, acrophase) and within-person daily-cosinor SDs predict incident clinical thresholds at Waves 3 and 4.
+Wave-2 Fitbit data from the ABCD Novel Technologies sub-study are used to fit per-participant single-component cosinor models. Three rhythm parameters (mesor, amplitude, acrophase) and three within-person stability indices (SD of daily mesor, amplitude, acrophase) are tested as prospective predictors of incident depression, obesity, and hypertension at Waves 3-4.
 
-## Repo layout
+## Layout
 
 ```
 code/
   utils/           shared loaders, modeling helpers (family-clustered logistic regression)
-  analyses/        numbered pipeline scripts (01-15) + build_supplement.py
+  analyses/        numbered pipeline scripts + build_supplement.py
   figures/         main-text figure scripts
 results/
   tables/          analytic frames, primary results, sample/incidence summaries
   outputs/         per-script run logs
-  sensitivity/     multicomponent, superhealthy, within-person sensitivity outputs
+  sensitivity/     multicomponent, behavioral horserace, within-person sensitivity
 figures/           main-text figures (PNG, PDF, SVG)
 supplement/        supplement.docx + tables/ + figures/ (300+ DPI PNGs)
 ```
 
-## Pipeline order
+## Pipeline
 
-1. `01_sample_and_incidence.py` — CONSORT flow, per-wave outcome matrix, common-HC and incident-case definitions, analytic frames per outcome
-2. `02_cosinor_descriptives.py` — BLUP and R^2 distributions
-3. `03_primary_depression.py`, `04_primary_obesity.py`, `05_primary_hypertension.py` — primary onset models
-4. `06_sleep_activity_covariates.py` — sleep/activity covariate adjustment
-5. `07a_conditional_prediction_primary.py`, `07b_conditional_prediction_sensitivity.py` — cross-condition prediction
-6. `13_multicomponent_cosinor_sensitivity.py` — 24+12-hour cosinor sensitivity
-7. `14_superhealthy_sensitivity.py`, `15_superhealthy_demographics.py` — super-healthy HC sensitivity + demographics
-8. `build_supplement.py` — assembles the supplement Word document
+| Script | Purpose |
+|---|---|
+| `01_sample_and_incidence.py` | CONSORT flow, per-wave outcome matrix, single HC group (N=2,004), analytic frames per outcome |
+| `02_cosinor_descriptives.py` | BLUP and R^2 distributions |
+| `03_primary_depression.py` | Primary onset models for CBCL DSM-Depression |
+| `04_primary_obesity.py` | Primary onset models for BMI >= 85th percentile |
+| `05_primary_hypertension.py` | Primary onset models for SBP/DBP >= 95th percentile |
+| `06_sleep_activity_covariates.py` | Sleep + activity covariate adjustment |
+| `07a_conditional_prediction_primary.py` | Cross-condition (comorbidity) prediction |
+| `07b_conditional_prediction_sensitivity.py` | Wave-1-restricted sensitivity |
+| `13_multicomponent_cosinor_sensitivity.py` | 24+12-hour cosinor sensitivity |
+| `16_hc_vs_incident_demographics.py` | Demographics: HC vs each incident-case group |
+| `17_incremental_predictive_value.py` | Incremental predictive value of cosinor over baseline covariates |
+| `18_rhythm_horserace_nested.py` | 4-model nested behavioral adjustment (HR / +activity / +sleep / +both) |
+| `18b_htn_amplitude_stability.py` | Amplitude stability sensitivity for hypertension |
+| `18c_within_person_sd_matched_3signal.py` | Within-person SDs adjusted for scale-matched behavioral SDs |
+| `19_table1_new_cohort.py` | Table 1 descriptives for the new analytic cohort |
+| `build_supplement.py` | Assembles the full supplement Word document |
 
-Run a script from the repo root: `python -m code.analyses.01_sample_and_incidence`, or directly: `python code/analyses/01_sample_and_incidence.py`.
+Run a script from the repo root: `python code/analyses/01_sample_and_incidence.py`.
 
 ## Conventions
 
 - Predictors are per-1-SD z-scored within each analytic frame.
-- All onset models are logistic regression with age and sex fixed effects and family-clustered standard errors on ABCD family ID (`utils.modeling.fit_logistic_cluster`).
-- Outcome flags: `dsm_dep_65` (CBCL DSM-Depression T >= 65), `obese_85` (CDC BMI percentile >= 85), `htn` (SBP >= 130 OR DBP >= 80).
-- Incident case: first observed elevation at Wave 3 or Wave 4 with documented absence of elevation at all earlier observed assessments.
+- Logistic onset models include age and sex fixed effects and family-clustered SEs on ABCD family ID (`utils.modeling.fit_logistic_cluster`).
+- Outcome flags: `dsm_dep_65` (CBCL DSM-Depression T >= 65), `obese_85` (CDC BMI percentile >= 85), `htn` (SBP/DBP >= 95th percentile or >=130/80 for ages >= 13).
+- Incident case: first observed elevation at Wave 3 or Wave 4 with documented absence of elevation at every earlier observed wave.
 - Single HC group (N = 2,004): below threshold for depression, obesity, AND hypertension at every observed wave with confirmed below-threshold follow-up CBCL, BMI, and BP at W3 or W4.
 
 ## Data dependencies

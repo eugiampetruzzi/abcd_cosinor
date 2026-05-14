@@ -1,0 +1,53 @@
+==============================================================================
+Rhythm horserace, nested models (super-healthy framework)
+==============================================================================
+  activity cosinor BLUPs available: n = 7,188 subjects
+
+=== Depression ===
+  shared row set across all 4 models: n = 2,438, cases = 461
+  wrote rhythm_horserace_corr_dep.tsv (|r|max off-diag = 0.959)
+  M1_HR              k =  3  n = 2,438  cases = 461  log-lik = -1162.66  AIC = 2337.3  AUC = 0.591
+  M2_HR+activity     k =  9  n = 2,438  cases = 461  log-lik = -1090.63  AIC = 2205.3  AUC = 0.682
+  M3_HR+sleep        k =  6  n = 2,438  cases = 461  log-lik = -1156.02  AIC = 2330.0  AUC = 0.618
+  M4_full            k = 12  n = 2,438  cases = 461  log-lik = -1084.02  AIC = 2198.0  AUC = 0.693
+  LRTs:
+              M1_HR → M2_HR+activity   χ²(6) = 144.05, p = 1.4e-28, ΔAUC = +0.0911, ΔAIC = -132.1
+              M1_HR → M3_HR+sleep      χ²(3) = 13.27, p = 0.00409, ΔAUC = +0.0276, ΔAIC = -7.3
+              M1_HR → M4_full          χ²(9) = 157.28, p = 2.72e-29, ΔAUC = +0.1024, ΔAIC = -139.3
+     M2_HR+activity → M4_full          χ²(3) = 13.23, p = 0.00416, ΔAUC = +0.0112, ΔAIC = -7.2
+        M3_HR+sleep → M4_full          χ²(6) = 144.01, p = 1.42e-28, ΔAUC = +0.0747, ΔAIC = -132.0
+
+=== Obesity ===
+  shared row set across all 4 models: n = 2,428, cases = 451
+  wrote rhythm_horserace_corr_obesity.tsv (|r|max off-diag = 0.958)
+  M1_HR              k =  3  n = 2,428  cases = 451  log-lik = -1133.12  AIC = 2278.2  AUC = 0.620
+  M2_HR+activity     k =  9  n = 2,428  cases = 451  log-lik = -1066.72  AIC = 2157.4  AUC = 0.708
+  M3_HR+sleep        k =  6  n = 2,428  cases = 451  log-lik = -1131.65  AIC = 2281.3  AUC = 0.624
+  M4_full            k = 12  n = 2,428  cases = 451  log-lik = -1064.74  AIC = 2159.5  AUC = 0.712
+  LRTs:
+              M1_HR → M2_HR+activity   χ²(6) = 132.81, p = 3.29e-26, ΔAUC = +0.0879, ΔAIC = -120.8
+              M1_HR → M3_HR+sleep      χ²(3) = 2.94, p = 0.402, ΔAUC = +0.0032, ΔAIC = +3.1
+              M1_HR → M4_full          χ²(9) = 136.76, p = 4.81e-25, ΔAUC = +0.0918, ΔAIC = -118.8
+     M2_HR+activity → M4_full          χ²(3) = 3.95, p = 0.267, ΔAUC = +0.0040, ΔAIC = +2.0
+        M3_HR+sleep → M4_full          χ²(6) = 133.82, p = 2.01e-26, ΔAUC = +0.0886, ΔAIC = -121.8
+
+=== Hypertension ===
+  shared row set across all 4 models: n = 2,240, cases = 263
+  wrote rhythm_horserace_corr_htn.tsv (|r|max off-diag = 0.959)
+  M1_HR              k =  3  n = 2,240  cases = 263  log-lik = -734.00  AIC = 1480.0  AUC = 0.723
+  M2_HR+activity     k =  9  n = 2,240  cases = 263  log-lik = -638.12  AIC = 1300.2  AUC = 0.800
+  M3_HR+sleep        k =  6  n = 2,240  cases = 263  log-lik = -722.70  AIC = 1463.4  AUC = 0.742
+  M4_full            k = 12  n = 2,240  cases = 263  log-lik = -625.43  AIC = 1280.9  AUC = 0.818
+  LRTs:
+              M1_HR → M2_HR+activity   χ²(6) = 191.75, p = 1.08e-38, ΔAUC = +0.0771, ΔAIC = -179.8
+              M1_HR → M3_HR+sleep      χ²(3) = 22.60, p = 4.89e-05, ΔAUC = +0.0191, ΔAIC = -16.6
+              M1_HR → M4_full          χ²(9) = 217.14, p = 8.36e-42, ΔAUC = +0.0946, ΔAIC = -199.1
+     M2_HR+activity → M4_full          χ²(3) = 25.38, p = 1.28e-05, ΔAUC = +0.0175, ΔAIC = -19.4
+        M3_HR+sleep → M4_full          χ²(6) = 194.54, p = 2.76e-39, ΔAUC = +0.0755, ΔAIC = -182.5
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/rhythm_horserace_nested.tsv
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/rhythm_horserace_lrt.tsv
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/rhythm_horserace_vif.tsv
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/figures/sensitivity/rhythm_horserace_full.png
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/figures/sensitivity/rhythm_horserace_hr_only.png
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/rhythm_horserace_summary.md

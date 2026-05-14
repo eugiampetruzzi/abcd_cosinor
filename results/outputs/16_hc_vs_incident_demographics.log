@@ -1,0 +1,53 @@
+==============================================================================
+HC vs. incident-case demographic comparisons
+==============================================================================
+  Outcome depression: HC n = 2,004, incident cases n = 463
+  Outcome obesity: HC n = 2,004, incident cases n = 457
+  Outcome hypertension: HC n = 2,004, incident cases n = 270
+  Overlap dep ∩ obesity: 60; dep ∩ HTN: 22; obesity ∩ HTN: 30; all three: 5
+
+--- HC vs. incident depression ---
+  HC n = 2,004;  incident-depression n = 463
+  Age at Wave 2 (yr)            HC = 12.02 (SD 0.66)  |  incident = 11.98 (SD 0.64)  |  t = +1.10, p = 0.272, d = +0.055 (negligible)
+  Sex                           HC: Female: 1306 (65.2%); Male: 698 (34.8%)
+                                incident: Female: 319 (68.9%); Male: 144 (31.1%)
+                                chi² = 2.16, p = 0.141, V = 0.030 (negligible)
+  Race/ethnicity                HC: Asian: 52 (2.6%); Black: 157 (7.8%); Hispanic: 271 (13.5%); Other: 181 (9.0%); White: 1343 (67.0%)
+                                incident: Asian: 5 (1.1%); Black: 27 (5.8%); Hispanic: 78 (16.8%); Other: 62 (13.4%); White: 291 (62.9%)
+                                chi² = 16.94, p = 0.00199, V = 0.083 (negligible)
+  Annual household income       HC: 50–100k: 561 (28.0%); <50k: 276 (13.8%); >100k: 1058 (52.8%); DK: 50 (2.5%); Decline: 59 (2.9%)
+                                incident: 50–100k: 150 (32.4%); <50k: 109 (23.5%); >100k: 177 (38.2%); DK: 14 (3.0%); Decline: 13 (2.8%)
+                                chi² = 41.90, p = 1.75e-08, V = 0.130 (small)  *
+
+--- HC vs. incident obesity ---
+  HC n = 2,004;  incident-obesity n = 457
+  Age at Wave 2 (yr)            HC = 12.02 (SD 0.66)  |  incident = 11.93 (SD 0.64)  |  t = +2.72, p = 0.00664, d = +0.138 (negligible)
+  Sex                           HC: Female: 1306 (65.2%); Male: 698 (34.8%)
+                                incident: Female: 238 (52.1%); Male: 219 (47.9%)
+                                chi² = 26.72, p = 2.35e-07, V = 0.104 (small)  *
+  Race/ethnicity                HC: Asian: 52 (2.6%); Black: 157 (7.8%); Hispanic: 271 (13.5%); Other: 181 (9.0%); White: 1343 (67.0%)
+                                incident: Asian: 6 (1.3%); Black: 49 (10.7%); Hispanic: 77 (16.8%); Other: 47 (10.3%); White: 278 (60.8%)
+                                chi² = 12.00, p = 0.0173, V = 0.070 (negligible)
+  Annual household income       HC: 50–100k: 561 (28.0%); <50k: 276 (13.8%); >100k: 1058 (52.8%); DK: 50 (2.5%); Decline: 59 (2.9%)
+                                incident: 50–100k: 139 (30.4%); <50k: 102 (22.3%); >100k: 192 (42.0%); DK: 15 (3.3%); Decline: 9 (2.0%)
+                                chi² = 29.14, p = 7.34e-06, V = 0.109 (small)  *
+
+--- HC vs. incident hypertension ---
+  HC n = 2,004;  incident-hypertension n = 270
+  Age at Wave 2 (yr)            HC = 12.02 (SD 0.66)  |  incident = 12.05 (SD 0.67)  |  t = -0.83, p = 0.407, d = -0.054 (negligible)
+  Sex                           HC: Female: 1306 (65.2%); Male: 698 (34.8%)
+                                incident: Female: 93 (34.4%); Male: 177 (65.6%)
+                                chi² = 93.60, p = 3.87e-22, V = 0.203 (small)  *
+  Race/ethnicity                HC: Asian: 52 (2.6%); Black: 157 (7.8%); Hispanic: 271 (13.5%); Other: 181 (9.0%); White: 1343 (67.0%)
+                                incident: Asian: 4 (1.5%); Black: 44 (16.3%); Hispanic: 35 (13.0%); Other: 39 (14.4%); White: 148 (54.8%)
+                                chi² = 33.14, p = 1.12e-06, V = 0.121 (small)  *
+  Annual household income       HC: 50–100k: 561 (28.0%); <50k: 276 (13.8%); >100k: 1058 (52.8%); DK: 50 (2.5%); Decline: 59 (2.9%)
+                                incident: 50–100k: 81 (30.0%); <50k: 65 (24.1%); >100k: 102 (37.8%); DK: 8 (3.0%); Decline: 14 (5.2%)
+                                chi² = 31.62, p = 2.28e-06, V = 0.118 (small)  *
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sample_characteristics/hc_vs_incident_demographics.csv
+
+==============================================================================
+Manuscript-ready sentence (paste into Sample Characteristics):
+==============================================================================
+Healthy controls (N = 2,004 for depression and obesity; N = 2,004 for hypertension) differed from incident depression cases (N = 463) on annual household income (>100k: HC 52.8%, incident 38.2%; V = 0.13); differed from incident obesity cases (N = 457) on sex (Female: HC 65.2%, incident 52.1%; V = 0.10) and annual household income (>100k: HC 52.8%, incident 42.0%; V = 0.11); and differed from incident hypertension cases (N = 270) on sex (Female: HC 65.2%, incident 34.4%; V = 0.20) and race/ethnicity (White: HC 67.0%, incident 54.8%; V = 0.12) and annual household income (>100k: HC 52.8%, incident 37.8%; V = 0.12).

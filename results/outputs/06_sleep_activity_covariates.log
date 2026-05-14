@@ -6,60 +6,60 @@ Sleep + activity covariate-adjusted primary onset models
   Within-person rhythm SD features: n = 7,230
 
 === Depression ===
-  [between-person × mean covariates] same-N row set: n = 2,859, cases = 322
-    Mesor                 base OR = 1.20, 95% CI [1.06, 1.36], p = 0.00384
-    Mesor                 adj  OR = 1.18, 95% CI [1.04, 1.34], p = 0.00917
-    Amplitude             base OR = 0.99, 95% CI [0.88, 1.11], p = 0.802
-    Amplitude             adj  OR = 1.08, 95% CI [0.94, 1.24], p = 0.291
-    Acrophase             base OR = 0.99, 95% CI [0.88, 1.11], p = 0.85
-    Acrophase             adj  OR = 0.95, 95% CI [0.85, 1.07], p = 0.402
+  [between-person × mean covariates] same-N row set: n = 1,662, cases = 322
+    Mesor                 base OR = 1.36, 95% CI [1.19, 1.55], p = 3.61e-06
+    Mesor                 adj  OR = 1.40, 95% CI [1.22, 1.61], p = 1.54e-06
+    Amplitude             base OR = 0.87, 95% CI [0.77, 0.99], p = 0.0305
+    Amplitude             adj  OR = 0.84, 95% CI [0.74, 0.96], p = 0.0101
+    Acrophase             base OR = 1.11, 95% CI [0.98, 1.26], p = 0.0989
+    Acrophase             adj  OR = 1.10, 95% CI [0.97, 1.25], p = 0.128
   [within-person × SD-of-daily covariates] (same-N row set defined per predictor)
-    SD daily mesor        n = 2,752, cases = 299; base OR = 1.09, 95% CI [0.98, 1.22], p = 0.127 | adj OR = 1.07, 95% CI [0.96, 1.20], p = 0.227
-    SD daily amplitude    n = 2,752, cases = 299; base OR = 1.01, 95% CI [0.90, 1.14], p = 0.814 | adj OR = 1.00, 95% CI [0.88, 1.14], p = 0.993
-    SD daily acrophase    n = 2,752, cases = 299; base OR = 1.07, 95% CI [0.97, 1.19], p = 0.192 | adj OR = 1.03, 95% CI [0.93, 1.16], p = 0.54
+    SD daily mesor        n = 1,655, cases = 299; base OR = 1.17, 95% CI [1.04, 1.32], p = 0.00738 | adj OR = 1.10, 95% CI [0.97, 1.24], p = 0.14
+    SD daily amplitude    n = 1,655, cases = 299; base OR = 1.00, 95% CI [0.89, 1.13], p = 0.998 | adj OR = 0.87, 95% CI [0.75, 1.00], p = 0.0535
+    SD daily acrophase    n = 1,655, cases = 299; base OR = 1.21, 95% CI [1.07, 1.37], p = 0.00318 | adj OR = 1.19, 95% CI [1.05, 1.35], p = 0.0077
 
 === Obesity ===
-  [between-person × mean covariates] same-N row set: n = 2,720, cases = 315
-    Mesor                 base OR = 1.23, 95% CI [1.09, 1.38], p = 0.000549
-    Mesor                 adj  OR = 1.18, 95% CI [1.05, 1.33], p = 0.0057
-    Amplitude             base OR = 0.86, 95% CI [0.76, 0.97], p = 0.0129
-    Amplitude             adj  OR = 0.75, 95% CI [0.64, 0.87], p = 0.000115
-    Acrophase             base OR = 1.20, 95% CI [1.07, 1.35], p = 0.00233
-    Acrophase             adj  OR = 1.17, 95% CI [1.04, 1.31], p = 0.00669
+  [between-person × mean covariates] same-N row set: n = 2,180, cases = 315
+    Mesor                 base OR = 1.28, 95% CI [1.13, 1.45], p = 7.1e-05
+    Mesor                 adj  OR = 1.30, 95% CI [1.14, 1.48], p = 6.9e-05
+    Amplitude             base OR = 0.86, 95% CI [0.76, 0.98], p = 0.0183
+    Amplitude             adj  OR = 0.84, 95% CI [0.74, 0.96], p = 0.00844
+    Acrophase             base OR = 1.20, 95% CI [1.06, 1.36], p = 0.00315
+    Acrophase             adj  OR = 1.19, 95% CI [1.06, 1.35], p = 0.0048
   [within-person × SD-of-daily covariates] (same-N row set defined per predictor)
-    SD daily mesor        n = 2,623, cases = 292; base OR = 1.19, 95% CI [1.07, 1.32], p = 0.00124 | adj OR = 1.17, 95% CI [1.04, 1.31], p = 0.00883
-    SD daily amplitude    n = 2,623, cases = 292; base OR = 1.14, 95% CI [1.01, 1.28], p = 0.0287 | adj OR = 1.13, 95% CI [1.00, 1.29], p = 0.0569
-    SD daily acrophase    n = 2,623, cases = 292; base OR = 1.14, 95% CI [1.03, 1.27], p = 0.0135 | adj OR = 1.08, 95% CI [0.97, 1.21], p = 0.162
+    SD daily mesor        n = 2,135, cases = 292; base OR = 1.21, 95% CI [1.09, 1.36], p = 0.000548 | adj OR = 1.18, 95% CI [1.05, 1.33], p = 0.0058
+    SD daily amplitude    n = 2,135, cases = 292; base OR = 1.14, 95% CI [1.01, 1.28], p = 0.0382 | adj OR = 1.11, 95% CI [0.96, 1.28], p = 0.159
+    SD daily acrophase    n = 2,135, cases = 292; base OR = 1.19, 95% CI [1.06, 1.34], p = 0.00256 | adj OR = 1.17, 95% CI [1.04, 1.32], p = 0.00906
 
 === Hypertension ===
-  [between-person × mean covariates] same-N row set: n = 1,558, cases = 160
-    Mesor                 base OR = 1.27, 95% CI [1.06, 1.52], p = 0.00999
-    Mesor                 adj  OR = 1.15, 95% CI [0.95, 1.38], p = 0.146
-    Amplitude             base OR = 0.87, 95% CI [0.73, 1.03], p = 0.111
-    Amplitude             adj  OR = 0.87, 95% CI [0.71, 1.07], p = 0.18
-    Acrophase             base OR = 1.19, 95% CI [1.01, 1.40], p = 0.036
-    Acrophase             adj  OR = 1.12, 95% CI [0.96, 1.32], p = 0.146
+  [between-person × mean covariates] same-N row set: n = 862, cases = 160
+    Mesor                 base OR = 1.45, 95% CI [1.21, 1.75], p = 8.72e-05
+    Mesor                 adj  OR = 1.48, 95% CI [1.22, 1.79], p = 5.26e-05
+    Amplitude             base OR = 0.75, 95% CI [0.62, 0.90], p = 0.00252
+    Amplitude             adj  OR = 0.69, 95% CI [0.56, 0.84], p = 0.000188
+    Acrophase             base OR = 1.33, 95% CI [1.11, 1.58], p = 0.00179
+    Acrophase             adj  OR = 1.30, 95% CI [1.09, 1.54], p = 0.00301
   [within-person × SD-of-daily covariates] (same-N row set defined per predictor)
-    SD daily mesor        n = 1,685, cases = 154; base OR = 1.12, 95% CI [0.94, 1.33], p = 0.208 | adj OR = 1.05, 95% CI [0.88, 1.27], p = 0.576
-    SD daily amplitude    n = 1,685, cases = 154; base OR = 1.01, 95% CI [0.85, 1.19], p = 0.939 | adj OR = 0.95, 95% CI [0.78, 1.15], p = 0.576
-    SD daily acrophase    n = 1,685, cases = 154; base OR = 1.10, 95% CI [0.95, 1.27], p = 0.208 | adj OR = 1.00, 95% CI [0.85, 1.18], p = 0.984
+    SD daily mesor        n = 950, cases = 154; base OR = 1.20, 95% CI [1.01, 1.42], p = 0.0367 | adj OR = 1.15, 95% CI [0.95, 1.38], p = 0.146
+    SD daily amplitude    n = 950, cases = 154; base OR = 1.00, 95% CI [0.83, 1.20], p = 0.978 | adj OR = 0.89, 95% CI [0.71, 1.11], p = 0.303
+    SD daily acrophase    n = 950, cases = 154; base OR = 1.30, 95% CI [1.11, 1.53], p = 0.00108 | adj OR = 1.28, 95% CI [1.09, 1.51], p = 0.0029
 
-Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/sleep_activity_covariate_adjusted.tsv
-Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/within_person_adjustment.csv
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/tables/sleep_activity_covariate_adjusted.tsv
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/within_person_adjustment.csv
 
 --- Within-person base vs adjusted side-by-side ---
 
   Depression:
-    SD daily mesor          base OR = 1.09 [0.98, 1.22], p = 0.127  ||  adj OR = 1.07 [0.96, 1.20], p = 0.227
-    SD daily amplitude      base OR = 1.01 [0.90, 1.14], p = 0.814  ||  adj OR = 1.00 [0.88, 1.14], p = 0.993
-    SD daily acrophase      base OR = 1.07 [0.97, 1.19], p = 0.192  ||  adj OR = 1.03 [0.93, 1.16], p = 0.54
+    SD daily mesor          base OR = 1.17 [1.04, 1.32], p = 0.00738  ||  adj OR = 1.10 [0.97, 1.24], p = 0.14 [sig flip]
+    SD daily amplitude      base OR = 1.00 [0.89, 1.13], p = 0.998  ||  adj OR = 0.87 [0.75, 1.00], p = 0.0535 [OR shift > 0.10]
+    SD daily acrophase      base OR = 1.21 [1.07, 1.37], p = 0.00318  ||  adj OR = 1.19 [1.05, 1.35], p = 0.0077
 
   Obesity:
-    SD daily mesor          base OR = 1.19 [1.07, 1.32], p = 0.00124  ||  adj OR = 1.17 [1.04, 1.31], p = 0.00883
-    SD daily amplitude      base OR = 1.14 [1.01, 1.28], p = 0.0287  ||  adj OR = 1.13 [1.00, 1.29], p = 0.0569 [sig flip]
-    SD daily acrophase      base OR = 1.14 [1.03, 1.27], p = 0.0135  ||  adj OR = 1.08 [0.97, 1.21], p = 0.162 [sig flip]
+    SD daily mesor          base OR = 1.21 [1.09, 1.36], p = 0.000548  ||  adj OR = 1.18 [1.05, 1.33], p = 0.0058
+    SD daily amplitude      base OR = 1.14 [1.01, 1.28], p = 0.0382  ||  adj OR = 1.11 [0.96, 1.28], p = 0.159 [sig flip]
+    SD daily acrophase      base OR = 1.19 [1.06, 1.34], p = 0.00256  ||  adj OR = 1.17 [1.04, 1.32], p = 0.00906
 
   Hypertension:
-    SD daily mesor          base OR = 1.12 [0.94, 1.33], p = 0.208  ||  adj OR = 1.05 [0.88, 1.27], p = 0.576
-    SD daily amplitude      base OR = 1.01 [0.85, 1.19], p = 0.939  ||  adj OR = 0.95 [0.78, 1.15], p = 0.576
-    SD daily acrophase      base OR = 1.10 [0.95, 1.27], p = 0.208  ||  adj OR = 1.00 [0.85, 1.18], p = 0.984
+    SD daily mesor          base OR = 1.20 [1.01, 1.42], p = 0.0367  ||  adj OR = 1.15 [0.95, 1.38], p = 0.146 [sig flip]
+    SD daily amplitude      base OR = 1.00 [0.83, 1.20], p = 0.978  ||  adj OR = 0.89 [0.71, 1.11], p = 0.303 [OR shift > 0.10]
+    SD daily acrophase      base OR = 1.30 [1.11, 1.53], p = 0.00108  ||  adj OR = 1.28 [1.09, 1.51], p = 0.0029

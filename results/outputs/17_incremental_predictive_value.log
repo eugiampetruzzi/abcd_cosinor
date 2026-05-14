@@ -1,0 +1,232 @@
+==============================================================================
+Incremental predictive value of cosinor parameters beyond behavior
+==============================================================================
+  Mean Wave-2 behavioral covariates available: n = 4,982
+  SD-of-daily Wave-2 covariates (≥7 days): n = 4,819
+
+==============================================================================
+Section 1. Between-person × mean behavioral covariates
+==============================================================================
+
+  --- Depression ---
+    mesor                   n = 1,662, events = 322
+      OR (primary, no behaviors)  = 1.36 [1.19, 1.55], p = 3.61e-06
+      OR (behaviors + rhythm)     = 1.40 [1.22, 1.61], p = 1.54e-06
+      LRT (full vs behaviors-only): χ²(1) = 25.45, p = 4.53e-07
+      AUC behaviors-only = 0.557; adjusted = 0.602; ΔAUC = +0.0449
+    amplitude               n = 1,662, events = 322
+      OR (primary, no behaviors)  = 0.87 [0.77, 0.99], p = 0.0305
+      OR (behaviors + rhythm)     = 0.84 [0.74, 0.96], p = 0.0101
+      LRT (full vs behaviors-only): χ²(1) = 6.65, p = 0.00991
+      AUC behaviors-only = 0.557; adjusted = 0.571; ΔAUC = +0.0143
+    acrophase               n = 1,662, events = 322
+      OR (primary, no behaviors)  = 1.11 [0.98, 1.26], p = 0.0989
+      OR (behaviors + rhythm)     = 1.10 [0.97, 1.25], p = 0.128
+      LRT (full vs behaviors-only): χ²(1) = 2.48, p = 0.116
+      AUC behaviors-only = 0.557; adjusted = 0.558; ΔAUC = +0.0009
+
+  --- Obesity ---
+    mesor                   n = 2,180, events = 315
+      OR (primary, no behaviors)  = 1.28 [1.13, 1.45], p = 7.1e-05
+      OR (behaviors + rhythm)     = 1.30 [1.14, 1.48], p = 6.9e-05
+      LRT (full vs behaviors-only): χ²(1) = 15.76, p = 7.18e-05
+      AUC behaviors-only = 0.554; adjusted = 0.588; ΔAUC = +0.0343
+    amplitude               n = 2,180, events = 315
+      OR (primary, no behaviors)  = 0.86 [0.76, 0.98], p = 0.0183
+      OR (behaviors + rhythm)     = 0.84 [0.74, 0.96], p = 0.00844
+      LRT (full vs behaviors-only): χ²(1) = 6.88, p = 0.00872
+      AUC behaviors-only = 0.554; adjusted = 0.567; ΔAUC = +0.0131
+    acrophase               n = 2,180, events = 315
+      OR (primary, no behaviors)  = 1.20 [1.06, 1.36], p = 0.00315
+      OR (behaviors + rhythm)     = 1.19 [1.06, 1.35], p = 0.0048
+      LRT (full vs behaviors-only): χ²(1) = 8.41, p = 0.00373
+      AUC behaviors-only = 0.554; adjusted = 0.574; ΔAUC = +0.0203
+
+  --- Hypertension ---
+    mesor                   n = 862, events = 160
+      OR (primary, no behaviors)  = 1.45 [1.21, 1.75], p = 8.72e-05
+      OR (behaviors + rhythm)     = 1.48 [1.22, 1.79], p = 5.26e-05
+      LRT (full vs behaviors-only): χ²(1) = 17.38, p = 3.06e-05
+      AUC behaviors-only = 0.650; adjusted = 0.666; ΔAUC = +0.0153
+    amplitude               n = 862, events = 160
+      OR (primary, no behaviors)  = 0.75 [0.62, 0.90], p = 0.00252
+      OR (behaviors + rhythm)     = 0.69 [0.56, 0.84], p = 0.000188
+      LRT (full vs behaviors-only): χ²(1) = 14.76, p = 0.000122
+      AUC behaviors-only = 0.650; adjusted = 0.671; ΔAUC = +0.0204
+    acrophase               n = 862, events = 160
+      OR (primary, no behaviors)  = 1.33 [1.11, 1.58], p = 0.00179
+      OR (behaviors + rhythm)     = 1.30 [1.09, 1.54], p = 0.00301
+      LRT (full vs behaviors-only): χ²(1) = 9.06, p = 0.00261
+      AUC behaviors-only = 0.650; adjusted = 0.665; ΔAUC = +0.0145
+
+==============================================================================
+Section 2. Within-person × SD-of-daily behavioral covariates
+==============================================================================
+
+  --- Depression ---
+    SD daily mesor          n = 1,655, events = 299
+      OR (primary, no behaviors)  = 1.17 [1.04, 1.32], p = 0.00738
+      OR (behaviors + rhythm)     = 1.10 [0.97, 1.24], p = 0.14
+      LRT: χ²(1) = 2.03, p = 0.155
+      AUC behaviors-only = 0.591; adjusted = 0.589; ΔAUC = -0.0018
+    SD daily amplitude      n = 1,655, events = 299
+      OR (primary, no behaviors)  = 1.00 [0.89, 1.13], p = 0.998
+      OR (behaviors + rhythm)     = 0.87 [0.75, 1.00], p = 0.0535
+      LRT: χ²(1) = 3.81, p = 0.0509
+      AUC behaviors-only = 0.591; adjusted = 0.590; ΔAUC = -0.0013
+    SD daily acrophase      n = 1,655, events = 299
+      OR (primary, no behaviors)  = 1.21 [1.07, 1.37], p = 0.00318
+      OR (behaviors + rhythm)     = 1.19 [1.05, 1.35], p = 0.0077
+      LRT: χ²(1) = 7.68, p = 0.00558
+      AUC behaviors-only = 0.591; adjusted = 0.593; ΔAUC = +0.0018
+
+  --- Obesity ---
+    SD daily mesor          n = 2,135, events = 292
+      OR (primary, no behaviors)  = 1.21 [1.09, 1.36], p = 0.000548
+      OR (behaviors + rhythm)     = 1.18 [1.05, 1.33], p = 0.0058
+      LRT: χ²(1) = 7.14, p = 0.00755
+      AUC behaviors-only = 0.584; adjusted = 0.596; ΔAUC = +0.0120
+    SD daily amplitude      n = 2,135, events = 292
+      OR (primary, no behaviors)  = 1.14 [1.01, 1.28], p = 0.0382
+      OR (behaviors + rhythm)     = 1.11 [0.96, 1.28], p = 0.159
+      LRT: χ²(1) = 1.95, p = 0.163
+      AUC behaviors-only = 0.584; adjusted = 0.588; ΔAUC = +0.0043
+    SD daily acrophase      n = 2,135, events = 292
+      OR (primary, no behaviors)  = 1.19 [1.06, 1.34], p = 0.00256
+      OR (behaviors + rhythm)     = 1.17 [1.04, 1.32], p = 0.00906
+      LRT: χ²(1) = 6.62, p = 0.0101
+      AUC behaviors-only = 0.584; adjusted = 0.591; ΔAUC = +0.0076
+
+  --- Hypertension ---
+    SD daily mesor          n = 950, events = 154
+      OR (primary, no behaviors)  = 1.20 [1.01, 1.42], p = 0.0367
+      OR (behaviors + rhythm)     = 1.15 [0.95, 1.38], p = 0.146
+      LRT: χ²(1) = 2.37, p = 0.123
+      AUC behaviors-only = 0.612; adjusted = 0.616; ΔAUC = +0.0037
+    SD daily amplitude      n = 950, events = 154
+      OR (primary, no behaviors)  = 1.00 [0.83, 1.20], p = 0.978
+      OR (behaviors + rhythm)     = 0.89 [0.71, 1.11], p = 0.303
+      LRT: χ²(1) = 1.21, p = 0.271
+      AUC behaviors-only = 0.612; adjusted = 0.610; ΔAUC = -0.0015
+    SD daily acrophase      n = 950, events = 154
+      OR (primary, no behaviors)  = 1.30 [1.11, 1.53], p = 0.00108
+      OR (behaviors + rhythm)     = 1.28 [1.09, 1.51], p = 0.0029
+      LRT: χ²(1) = 8.46, p = 0.00363
+      AUC behaviors-only = 0.612; adjusted = 0.634; ΔAUC = +0.0225
+
+==============================================================================
+Section 3. Comorbidity × (mean + SD) behavioral covariates
+==============================================================================
+
+  --- dep_anchor → obesity onset ---
+    Pre-covariate-restriction: n = 386, events = 71
+    mesor                   n = 219, events = 37
+      OR (primary, no behaviors)  = 1.40 [0.99, 1.99], p = 0.057
+      OR (behaviors + rhythm)     = 1.59 [1.08, 2.36], p = 0.0199
+      LRT: χ²(1) = 5.47, p = 0.0194
+      AUC behaviors-only = 0.631; adjusted = 0.661; ΔAUC = +0.0300
+    amplitude               n = 219, events = 37
+      OR (primary, no behaviors)  = 1.30 [0.92, 1.83], p = 0.134
+      OR (behaviors + rhythm)     = 1.37 [0.95, 1.96], p = 0.0894
+      LRT: χ²(1) = 2.55, p = 0.11
+      AUC behaviors-only = 0.631; adjusted = 0.634; ΔAUC = +0.0028
+    acrophase               n = 219, events = 37
+      OR (primary, no behaviors)  = 1.20 [0.83, 1.72], p = 0.329
+      OR (behaviors + rhythm)     = 0.99 [0.66, 1.49], p = 0.962
+      LRT: χ²(1) = 0.00, p = 0.963
+      AUC behaviors-only = 0.631; adjusted = 0.632; ΔAUC = +0.0006
+    SD daily mesor          n = 209, events = 36
+      OR (primary, no behaviors)  = 1.48 [1.03, 2.12], p = 0.0332
+      OR (behaviors + rhythm)     = 1.48 [1.00, 2.18], p = 0.0482
+      LRT: χ²(1) = 4.27, p = 0.0389
+      AUC behaviors-only = 0.630; adjusted = 0.678; ΔAUC = +0.0483
+    SD daily amplitude      n = 209, events = 36
+      OR (primary, no behaviors)  = 1.22 [0.88, 1.69], p = 0.233
+      OR (behaviors + rhythm)     = 1.19 [0.76, 1.84], p = 0.446
+      LRT: χ²(1) = 0.62, p = 0.433
+      AUC behaviors-only = 0.630; adjusted = 0.636; ΔAUC = +0.0067
+    SD daily acrophase      n = 209, events = 36
+      OR (primary, no behaviors)  = 0.81 [0.56, 1.17], p = 0.269
+      OR (behaviors + rhythm)     = 0.67 [0.44, 1.01], p = 0.0549
+      LRT: χ²(1) = 3.36, p = 0.0666
+      AUC behaviors-only = 0.630; adjusted = 0.654; ΔAUC = +0.0247
+
+  --- obesity_anchor → depression onset ---
+    Pre-covariate-restriction: n = 1,553, events = 174
+    mesor                   n = 859, events = 100
+      OR (primary, no behaviors)  = 1.12 [0.90, 1.41], p = 0.303
+      OR (behaviors + rhythm)     = 1.11 [0.89, 1.40], p = 0.353
+      LRT: χ²(1) = 0.91, p = 0.34
+      AUC behaviors-only = 0.562; adjusted = 0.567; ΔAUC = +0.0054
+    amplitude               n = 859, events = 100
+      OR (primary, no behaviors)  = 1.06 [0.86, 1.30], p = 0.602
+      OR (behaviors + rhythm)     = 1.07 [0.85, 1.35], p = 0.549
+      LRT: χ²(1) = 0.33, p = 0.568
+      AUC behaviors-only = 0.562; adjusted = 0.568; ΔAUC = +0.0061
+    acrophase               n = 859, events = 100
+      OR (primary, no behaviors)  = 0.93 [0.77, 1.13], p = 0.478
+      OR (behaviors + rhythm)     = 0.90 [0.74, 1.09], p = 0.279
+      LRT: χ²(1) = 1.10, p = 0.294
+      AUC behaviors-only = 0.562; adjusted = 0.578; ΔAUC = +0.0159
+    SD daily mesor          n = 835, events = 98
+      OR (primary, no behaviors)  = 1.07 [0.88, 1.31], p = 0.5
+      OR (behaviors + rhythm)     = 1.01 [0.82, 1.25], p = 0.909
+      LRT: χ²(1) = 0.01, p = 0.915
+      AUC behaviors-only = 0.565; adjusted = 0.563; ΔAUC = -0.0014
+    SD daily amplitude      n = 835, events = 98
+      OR (primary, no behaviors)  = 1.08 [0.90, 1.28], p = 0.42
+      OR (behaviors + rhythm)     = 1.01 [0.81, 1.27], p = 0.92
+      LRT: χ²(1) = 0.01, p = 0.927
+      AUC behaviors-only = 0.565; adjusted = 0.565; ΔAUC = +0.0002
+    SD daily acrophase      n = 835, events = 98
+      OR (primary, no behaviors)  = 0.99 [0.82, 1.20], p = 0.928
+      OR (behaviors + rhythm)     = 0.94 [0.76, 1.16], p = 0.535
+      LRT: χ²(1) = 0.33, p = 0.565
+      AUC behaviors-only = 0.565; adjusted = 0.566; ΔAUC = +0.0018
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/incremental_predictive_value.csv
+
+==============================================================================
+FLAGS
+==============================================================================
+
+  Cells with OR_adj p<.05 AND LRT p<.05 (strongest evidence):
+    between-person Depression                       mesor                   OR_adj = 1.40 (p * = 1.54e-06)  LRT χ² = 25.45 (p * = 4.53e-07)  ΔAUC = +0.0449
+    between-person Depression                       amplitude               OR_adj = 0.84 (p * = 0.0101)  LRT χ² = 6.65 (p * = 0.00991)  ΔAUC = +0.0143
+    between-person Obesity                          mesor                   OR_adj = 1.30 (p * = 6.9e-05)  LRT χ² = 15.76 (p * = 7.18e-05)  ΔAUC = +0.0343
+    between-person Obesity                          amplitude               OR_adj = 0.84 (p * = 0.00844)  LRT χ² = 6.88 (p * = 0.00872)  ΔAUC = +0.0131
+    between-person Obesity                          acrophase               OR_adj = 1.19 (p * = 0.0048)  LRT χ² = 8.41 (p * = 0.00373)  ΔAUC = +0.0203
+    between-person Hypertension                     mesor                   OR_adj = 1.48 (p * = 5.26e-05)  LRT χ² = 17.38 (p * = 3.06e-05)  ΔAUC = +0.0153
+    between-person Hypertension                     amplitude               OR_adj = 0.69 (p * = 0.000188)  LRT χ² = 14.76 (p * = 0.000122)  ΔAUC = +0.0204
+    between-person Hypertension                     acrophase               OR_adj = 1.30 (p * = 0.00301)  LRT χ² = 9.06 (p * = 0.00261)  ΔAUC = +0.0145
+    within-person  Depression                       SD daily acrophase      OR_adj = 1.19 (p * = 0.0077)  LRT χ² = 7.68 (p * = 0.00558)  ΔAUC = +0.0018
+    within-person  Obesity                          SD daily mesor          OR_adj = 1.18 (p * = 0.0058)  LRT χ² = 7.14 (p * = 0.00755)  ΔAUC = +0.0120
+    within-person  Obesity                          SD daily acrophase      OR_adj = 1.17 (p * = 0.00906)  LRT χ² = 6.62 (p * = 0.0101)  ΔAUC = +0.0076
+    within-person  Hypertension                     SD daily acrophase      OR_adj = 1.28 (p * = 0.0029)  LRT χ² = 8.46 (p * = 0.00363)  ΔAUC = +0.0225
+    comorbidity    dep_anchor → obesity onset       mesor                   OR_adj = 1.59 (p * = 0.0199)  LRT χ² = 5.47 (p * = 0.0194)  ΔAUC = +0.0300
+    comorbidity    dep_anchor → obesity onset       SD daily mesor          OR_adj = 1.48 (p * = 0.0482)  LRT χ² = 4.27 (p * = 0.0389)  ΔAUC = +0.0483
+
+  Cells with OR_adj p<.05 but LRT p≥.05 (interpretively softer):
+
+  Cells where primary OR was significant but adjusted is not (attenuates under behavior):
+    within-person  Depression                       SD daily mesor          OR_adj = 1.10 (p   = 0.14)  LRT χ² = 2.03 (p   = 0.155)  ΔAUC = -0.0018
+    within-person  Obesity                          SD daily amplitude      OR_adj = 1.11 (p   = 0.159)  LRT χ² = 1.95 (p   = 0.163)  ΔAUC = +0.0043
+    within-person  Hypertension                     SD daily mesor          OR_adj = 1.15 (p   = 0.146)  LRT χ² = 2.37 (p   = 0.123)  ΔAUC = +0.0037
+
+  Cells with ΔAUC ≥ 0.01 (visible predictive-value gain):
+    between-person Depression                       mesor                   OR_adj = 1.40 (p * = 1.54e-06)  LRT χ² = 25.45 (p * = 4.53e-07)  ΔAUC = +0.0449
+    between-person Depression                       amplitude               OR_adj = 0.84 (p * = 0.0101)  LRT χ² = 6.65 (p * = 0.00991)  ΔAUC = +0.0143
+    between-person Obesity                          mesor                   OR_adj = 1.30 (p * = 6.9e-05)  LRT χ² = 15.76 (p * = 7.18e-05)  ΔAUC = +0.0343
+    between-person Obesity                          amplitude               OR_adj = 0.84 (p * = 0.00844)  LRT χ² = 6.88 (p * = 0.00872)  ΔAUC = +0.0131
+    between-person Obesity                          acrophase               OR_adj = 1.19 (p * = 0.0048)  LRT χ² = 8.41 (p * = 0.00373)  ΔAUC = +0.0203
+    between-person Hypertension                     mesor                   OR_adj = 1.48 (p * = 5.26e-05)  LRT χ² = 17.38 (p * = 3.06e-05)  ΔAUC = +0.0153
+    between-person Hypertension                     amplitude               OR_adj = 0.69 (p * = 0.000188)  LRT χ² = 14.76 (p * = 0.000122)  ΔAUC = +0.0204
+    between-person Hypertension                     acrophase               OR_adj = 1.30 (p * = 0.00301)  LRT χ² = 9.06 (p * = 0.00261)  ΔAUC = +0.0145
+    within-person  Obesity                          SD daily mesor          OR_adj = 1.18 (p * = 0.0058)  LRT χ² = 7.14 (p * = 0.00755)  ΔAUC = +0.0120
+    within-person  Hypertension                     SD daily acrophase      OR_adj = 1.28 (p * = 0.0029)  LRT χ² = 8.46 (p * = 0.00363)  ΔAUC = +0.0225
+    comorbidity    dep_anchor → obesity onset       mesor                   OR_adj = 1.59 (p * = 0.0199)  LRT χ² = 5.47 (p * = 0.0194)  ΔAUC = +0.0300
+    comorbidity    dep_anchor → obesity onset       SD daily mesor          OR_adj = 1.48 (p * = 0.0482)  LRT χ² = 4.27 (p * = 0.0389)  ΔAUC = +0.0483
+    comorbidity    dep_anchor → obesity onset       SD daily acrophase      OR_adj = 0.67 (p   = 0.0549)  LRT χ² = 3.36 (p   = 0.0666)  ΔAUC = +0.0247
+    comorbidity    obesity_anchor → depression onset acrophase               OR_adj = 0.90 (p   = 0.279)  LRT χ² = 1.10 (p   = 0.294)  ΔAUC = +0.0159
+
+  Comorbidity cells with n_events < 30 after covariate restriction:

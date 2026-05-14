@@ -4,7 +4,7 @@ Multi-component cosinor sensitivity
 
 --- Section 1. Per-participant OLS cosinor fits (1-comp vs 2-comp) ---
   Hourly-profile rows = 173,403; unique subjects = 7,230
-  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/multicomponent_blups.csv
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/multicomponent_blups.csv
   N participants fit:              7,188
   Converged single-component:      7,188 (100.0%)
   Converged multi-component:       7,188 (100.0%)
@@ -16,56 +16,56 @@ Multi-component cosinor sensitivity
 
 --- Section 2. Primary incidence under multi-component (plus single-component for direct comparison) ---
 
-  depression: n = 4,176; events = 462
-    [2-comp] mesor           OR = 1.13, 95% CI [1.02, 1.25], p = 0.0165
-    [2-comp] amplitude_24    OR = 1.02, 95% CI [0.93, 1.12], p = 0.719
-    [2-comp] acrophase_24    OR = 0.95, 95% CI [0.87, 1.04], p = 0.279
-    [2-comp] amplitude_12    OR = 1.08, 95% CI [0.99, 1.19], p = 0.0963
-    [2-comp] acrophase_12    OR = 1.18, 95% CI [1.04, 1.34], p = 0.00783
-    [1-comp] mesor           OR = 1.13, 95% CI [1.02, 1.25], p = 0.0165
-    [1-comp] amplitude_24    OR = 1.02, 95% CI [0.93, 1.12], p = 0.719
-    [1-comp] acrophase_24    OR = 0.95, 95% CI [0.87, 1.04], p = 0.279
+  depression: n = 2,426; events = 462
+    [2-comp] mesor           OR = 1.33, 95% CI [1.19, 1.48], p = 3.12e-07
+    [2-comp] amplitude_24    OR = 0.90, 95% CI [0.82, 1.00], p = 0.049
+    [2-comp] acrophase_24    OR = 1.07, 95% CI [0.97, 1.19], p = 0.188
+    [2-comp] amplitude_12    OR = 1.02, 95% CI [0.92, 1.13], p = 0.688
+    [2-comp] acrophase_12    OR = 1.19, 95% CI [1.03, 1.36], p = 0.0154
+    [1-comp] mesor           OR = 1.33, 95% CI [1.19, 1.48], p = 3.12e-07
+    [1-comp] amplitude_24    OR = 0.90, 95% CI [0.82, 1.00], p = 0.049
+    [1-comp] acrophase_24    OR = 1.07, 95% CI [0.97, 1.19], p = 0.188
 
-  obesity: n = 3,908; events = 453
-    [2-comp] mesor           OR = 1.28, 95% CI [1.16, 1.42], p = 1.22e-06
-    [2-comp] amplitude_24    OR = 0.91, 95% CI [0.82, 1.00], p = 0.0582
-    [2-comp] acrophase_24    OR = 1.13, 95% CI [1.03, 1.25], p = 0.0109
-    [2-comp] amplitude_12    OR = 1.03, 95% CI [0.93, 1.13], p = 0.575
-    [2-comp] acrophase_12    OR = 1.08, 95% CI [0.97, 1.21], p = 0.175
-    [1-comp] mesor           OR = 1.28, 95% CI [1.16, 1.42], p = 1.22e-06
-    [1-comp] amplitude_24    OR = 0.91, 95% CI [0.82, 1.00], p = 0.0582
-    [1-comp] acrophase_24    OR = 1.13, 95% CI [1.03, 1.25], p = 0.0109
+  obesity: n = 3,127; events = 453
+    [2-comp] mesor           OR = 1.34, 95% CI [1.20, 1.48], p = 6.33e-08
+    [2-comp] amplitude_24    OR = 0.91, 95% CI [0.82, 1.01], p = 0.0661
+    [2-comp] acrophase_24    OR = 1.14, 95% CI [1.03, 1.26], p = 0.0119
+    [2-comp] amplitude_12    OR = 1.02, 95% CI [0.93, 1.13], p = 0.65
+    [2-comp] acrophase_12    OR = 1.09, 95% CI [0.97, 1.23], p = 0.144
+    [1-comp] mesor           OR = 1.34, 95% CI [1.20, 1.48], p = 6.33e-08
+    [1-comp] amplitude_24    OR = 0.91, 95% CI [0.82, 1.01], p = 0.0661
+    [1-comp] acrophase_24    OR = 1.14, 95% CI [1.03, 1.26], p = 0.0119
 
-  hypertension: n = 2,653; events = 266
-    [2-comp] mesor           OR = 1.31, 95% CI [1.14, 1.51], p = 0.000163
-    [2-comp] amplitude_24    OR = 0.94, 95% CI [0.83, 1.07], p = 0.357
-    [2-comp] acrophase_24    OR = 1.16, 95% CI [1.02, 1.32], p = 0.0239
-    [2-comp] amplitude_12    OR = 0.94, 95% CI [0.83, 1.07], p = 0.349
-    [2-comp] acrophase_12    OR = 1.07, 95% CI [0.92, 1.25], p = 0.372
-    [1-comp] mesor           OR = 1.31, 95% CI [1.14, 1.51], p = 0.000163
-    [1-comp] amplitude_24    OR = 0.94, 95% CI [0.83, 1.07], p = 0.357
-    [1-comp] acrophase_24    OR = 1.16, 95% CI [1.02, 1.32], p = 0.0239
+  hypertension: n = 1,471; events = 266
+    [2-comp] mesor           OR = 1.56, 95% CI [1.34, 1.80], p = 4.68e-09
+    [2-comp] amplitude_24    OR = 0.83, 95% CI [0.72, 0.95], p = 0.0074
+    [2-comp] acrophase_24    OR = 1.27, 95% CI [1.11, 1.45], p = 0.000489
+    [2-comp] amplitude_12    OR = 0.86, 95% CI [0.75, 1.00], p = 0.0484
+    [2-comp] acrophase_12    OR = 1.13, 95% CI [0.94, 1.34], p = 0.186
+    [1-comp] mesor           OR = 1.56, 95% CI [1.34, 1.80], p = 4.68e-09
+    [1-comp] amplitude_24    OR = 0.83, 95% CI [0.72, 0.95], p = 0.0074
+    [1-comp] acrophase_24    OR = 1.27, 95% CI [1.11, 1.45], p = 0.000489
 
-  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/multicomponent_incidence.csv
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/multicomponent_incidence.csv
 
 --- Section 3. Side-by-side single vs multi (shared predictors) ---
 
   depression:
-    mesor           1-comp OR = 1.13 [1.02, 1.25], p = 0.0165  || 2-comp OR = 1.13 [1.02, 1.25], p = 0.0165  
-    amplitude_24    1-comp OR = 1.02 [0.93, 1.12], p = 0.719  || 2-comp OR = 1.02 [0.93, 1.12], p = 0.719  
-    acrophase_24    1-comp OR = 0.95 [0.87, 1.04], p = 0.279  || 2-comp OR = 0.95 [0.87, 1.04], p = 0.279  
+    mesor           1-comp OR = 1.33 [1.19, 1.48], p = 3.12e-07  || 2-comp OR = 1.33 [1.19, 1.48], p = 3.12e-07  
+    amplitude_24    1-comp OR = 0.90 [0.82, 1.00], p = 0.049  || 2-comp OR = 0.90 [0.82, 1.00], p = 0.049  
+    acrophase_24    1-comp OR = 1.07 [0.97, 1.19], p = 0.188  || 2-comp OR = 1.07 [0.97, 1.19], p = 0.188  
 
   obesity:
-    mesor           1-comp OR = 1.28 [1.16, 1.42], p = 1.22e-06  || 2-comp OR = 1.28 [1.16, 1.42], p = 1.22e-06  
-    amplitude_24    1-comp OR = 0.91 [0.82, 1.00], p = 0.0582  || 2-comp OR = 0.91 [0.82, 1.00], p = 0.0582  
-    acrophase_24    1-comp OR = 1.13 [1.03, 1.25], p = 0.0109  || 2-comp OR = 1.13 [1.03, 1.25], p = 0.0109  
+    mesor           1-comp OR = 1.34 [1.20, 1.48], p = 6.33e-08  || 2-comp OR = 1.34 [1.20, 1.48], p = 6.33e-08  
+    amplitude_24    1-comp OR = 0.91 [0.82, 1.01], p = 0.0661  || 2-comp OR = 0.91 [0.82, 1.01], p = 0.0661  
+    acrophase_24    1-comp OR = 1.14 [1.03, 1.26], p = 0.0119  || 2-comp OR = 1.14 [1.03, 1.26], p = 0.0119  
 
   hypertension:
-    mesor           1-comp OR = 1.31 [1.14, 1.51], p = 0.000163  || 2-comp OR = 1.31 [1.14, 1.51], p = 0.000163  
-    amplitude_24    1-comp OR = 0.94 [0.83, 1.07], p = 0.357  || 2-comp OR = 0.94 [0.83, 1.07], p = 0.357  
-    acrophase_24    1-comp OR = 1.16 [1.02, 1.32], p = 0.0239  || 2-comp OR = 1.16 [1.02, 1.32], p = 0.0239  
+    mesor           1-comp OR = 1.56 [1.34, 1.80], p = 4.68e-09  || 2-comp OR = 1.56 [1.34, 1.80], p = 4.68e-09  
+    amplitude_24    1-comp OR = 0.83 [0.72, 0.95], p = 0.0074  || 2-comp OR = 0.83 [0.72, 0.95], p = 0.0074  
+    acrophase_24    1-comp OR = 1.27 [1.11, 1.45], p = 0.000489  || 2-comp OR = 1.27 [1.11, 1.45], p = 0.000489  
 
-  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/sensitivity/multicomponent_vs_single_comparison.csv
+  Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/multicomponent_vs_single_comparison.csv
 
 --- Section 4. Fit-quality comparison ---
   Median ΔR² (multi − single):              0.0533

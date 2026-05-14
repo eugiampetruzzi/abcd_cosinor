@@ -1,10 +1,10 @@
 Outcome	Parameter	OR (24-hr only)	OR (24+12-hr)	p (24-hr)	p (24+12-hr)
-Depression	Mesor	1.13 [1.02, 1.25]	1.13 [1.02, 1.25]	0.016	0.016
-Depression	Amplitude	1.02 [0.93, 1.12]	1.02 [0.93, 1.12]	0.719	0.719
-Depression	Acrophase	0.95 [0.87, 1.04]	0.95 [0.87, 1.04]	0.279	0.279
-Obesity	Mesor	1.28 [1.16, 1.42]	1.28 [1.16, 1.42]	< .001	< .001
-Obesity	Amplitude	0.91 [0.82, 1.00]	0.91 [0.82, 1.00]	0.058	0.058
-Obesity	Acrophase	1.13 [1.03, 1.25]	1.13 [1.03, 1.25]	0.011	0.011
-Hypertension	Mesor	1.31 [1.14, 1.51]	1.31 [1.14, 1.51]	< .001	< .001
-Hypertension	Amplitude	0.94 [0.83, 1.07]	0.94 [0.83, 1.07]	0.357	0.357
-Hypertension	Acrophase	1.16 [1.02, 1.32]	1.16 [1.02, 1.32]	0.024	0.024
+Depression	Mesor	1.33 [1.19, 1.48]	1.33 [1.19, 1.48]	< .001	< .001
+Depression	Amplitude	0.90 [0.82, 1.00]	0.90 [0.82, 1.00]	0.049	0.049
+Depression	Acrophase	1.07 [0.97, 1.19]	1.07 [0.97, 1.19]	0.188	0.188
+Obesity	Mesor	1.34 [1.20, 1.48]	1.34 [1.20, 1.48]	< .001	< .001
+Obesity	Amplitude	0.91 [0.82, 1.01]	0.91 [0.82, 1.01]	0.066	0.066
+Obesity	Acrophase	1.14 [1.03, 1.26]	1.14 [1.03, 1.26]	0.012	0.012
+Hypertension	Mesor	1.56 [1.34, 1.80]	1.56 [1.34, 1.80]	< .001	< .001
+Hypertension	Amplitude	0.83 [0.72, 0.95]	0.83 [0.72, 0.95]	0.007	0.007
+Hypertension	Acrophase	1.27 [1.11, 1.45]	1.27 [1.11, 1.45]	< .001	< .001

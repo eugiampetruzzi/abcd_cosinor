@@ -46,6 +46,7 @@ plt.rcParams.update({
 })
 
 
+
 def _zscore(s: pd.Series) -> pd.Series:
     return (s - s.mean()) / s.std()
 
@@ -436,7 +437,8 @@ def section_3() -> dict:
     rows = []
     for label, df_o in [("Depression", prim_dep), ("Obesity", prim_obs),
                           ("Hypertension", prim_htn)]:
-        wsub = df_o[df_o["predictor"].fillna("").str.startswith("SD_daily_")]
+        wsub = df_o[df_o["predictor"].fillna("").str.startswith("SD_daily_")
+                      & (df_o.get("analysis", "") == "within_univariate")]
         for _, r in wsub.iterrows():
             par = r["predictor"].replace("SD_daily_", "SD daily ").capitalize()
             rows.append({
@@ -618,106 +620,51 @@ def section_4() -> dict:
 
 
 def section_5() -> dict:
-    print("\n[Section 5] Running nested behavioral models ...")
-    summary_path = DERIV / "fitbit_summary" / "per_wave_summary.parquet"
-    fit_summary = pd.read_parquet(summary_path)
-    fit_summary = fit_summary[fit_summary["session_id"] == W2].copy()
-    if "participant_id" not in fit_summary.columns:
-        fit_summary = fit_summary.rename(columns={"subject_id": "participant_id"})
+    print("\n[Section 5] Loading pre-computed nested behavioral results ...")
+    horserace = pd.read_csv(PREDICTION_SENS / "rhythm_horserace_nested.tsv",
+                              sep="\t")
+    lrt = pd.read_csv(PREDICTION_SENS / "rhythm_horserace_lrt.tsv", sep="\t")
 
-    behav_cosinor_path = DERIV / "fitbit_summary" / "behavioral_cosinor.parquet"
-    have_behav_cosinor = behav_cosinor_path.exists()
-    if have_behav_cosinor:
-        bc = pd.read_parquet(behav_cosinor_path)
-        bc = bc[bc["session_id"] == W2].copy()
-        ACT_COVS = ["steps_mesor", "steps_amplitude", "steps_acrophase",
-                      "mets_mesor",  "mets_amplitude",  "mets_acrophase"]
-        SLP_COVS = ["sleep_prop_mesor", "sleep_prop_amplitude", "sleep_prop_acrophase"]
-    else:
-        ACT_COVS = ["daily_steps", "mets_avg"]
-        SLP_COVS = ["sleep_period_min", "waso_min"]
-        bc = fit_summary
-    print(f"  Behavioral cosinor parameters available: {have_behav_cosinor}")
-    keep_cols = ["participant_id"] + ACT_COVS + SLP_COVS
-    bc = bc[[c for c in keep_cols if c in bc.columns]]
+    MODEL_LABELS = {
+        "M1_HR":         "M1: HR only",
+        "M2_HR+activity":"M2: HR + activity",
+        "M3_HR+sleep":   "M3: HR + sleep",
+        "M4_full":       "M4: HR + activity + sleep",
+    }
+    HR_LABELS = {"hr_mesor": "HR mesor",
+                  "hr_amplitude": "HR amplitude",
+                  "hr_acrophase": "HR acrophase"}
 
-    OUTCOMES = [("Depression", "depression"),
-                  ("Obesity",     "obesity"),
-                  ("Hypertension","hypertension")]
     nested_rows = []
-    model_comp_rows = []
-    for outcome_lbl, frame_name in OUTCOMES:
-        af = _load_analytic(frame_name)
-        af = af.rename(columns={"mesor_blup": "typical_day_mesor",
-                                  "amplitude_blup": "typical_day_amplitude",
-                                  "acrophase_blup": "typical_day_acrophase"})
-        af = af.merge(bc, on="participant_id", how="left")
-
-        all_needed = ["typical_day_mesor", "typical_day_amplitude",
-                       "typical_day_acrophase",
-                       *[c for c in ACT_COVS if c in af.columns],
-                       *[c for c in SLP_COVS if c in af.columns],
-                       "onset", "age_yrs", "is_female", "family_id"]
-        sub = af.dropna(subset=all_needed).copy()
-        n = len(sub); n_cases = int(sub["onset"].sum())
-        print(f"    {outcome_lbl}: nested-frame n = {n}, cases = {n_cases}")
-
-        HR_COLS = ["typical_day_mesor", "typical_day_amplitude",
-                    "typical_day_acrophase"]
-        models = {
-            "M1: HR only":              HR_COLS,
-            "M2: HR + activity":        HR_COLS + [c for c in ACT_COVS if c in sub.columns],
-            "M3: HR + sleep":           HR_COLS + [c for c in SLP_COVS if c in sub.columns],
-            "M4: HR + activity + sleep":HR_COLS + [c for c in ACT_COVS if c in sub.columns]
-                                                 + [c for c in SLP_COVS if c in sub.columns],
-        }
-        ll_aucs = {}
-        for m_lbl, cols in models.items():
-            fit_dict = fit_logistic_cluster(sub, cols)
-            if fit_dict is None: continue
-            for col in HR_COLS:
-                r = fit_dict[col]
-                par = {"typical_day_mesor": "HR mesor",
-                        "typical_day_amplitude": "HR amplitude",
-                        "typical_day_acrophase": "HR acrophase"}[col]
-                nested_rows.append({
-                    "Outcome": outcome_lbl, "Model": m_lbl, "Parameter": par,
-                    "N": r.n, "N_cases": r.n_cases,
-                    "OR": f"{r.OR:.2f}",
-                    "95% CI": f"[{r.OR_lo:.2f}, {r.OR_hi:.2f}]",
-                    "p":  _fmt_p(r.p),
-                    "_OR": r.OR, "_lo": r.OR_lo, "_hi": r.OR_hi, "_p": r.p,
-                })
-
-            use = sub.dropna(subset=cols + ["age_yrs", "is_female",
-                                              "family_id", "onset"]).copy()
-            Xz = use[cols + ["age_yrs", "is_female"]].copy()
-            for c in cols:
-                Xz[c] = _zscore(Xz[c])
-            X = sm.add_constant(Xz, has_constant="add")
-            f = sm.Logit(use["onset"].astype(int), X).fit(
-                disp=0, cov_type="cluster",
-                cov_kwds={"groups": use["family_id"]}, maxiter=200)
-            from sklearn.metrics import roc_auc_score
-            auc = roc_auc_score(use["onset"].astype(int), f.predict(X))
-            ll_aucs[m_lbl] = (f.llf, len(cols) + 3, auc)
-
-        for ref, comp in [("M1: HR only", "M2: HR + activity"),
-                            ("M1: HR only", "M3: HR + sleep"),
-                            ("M1: HR only", "M4: HR + activity + sleep")]:
-            if ref not in ll_aucs or comp not in ll_aucs:
-                continue
-            ll0, k0, auc0 = ll_aucs[ref]; ll1, k1, auc1 = ll_aucs[comp]
-            chi = 2 * (ll1 - ll0); df = k1 - k0
-            p_lrt = 1 - stats.chi2.cdf(chi, df)
-            model_comp_rows.append({
-                "Outcome": outcome_lbl, "Comparison": f"{comp} vs {ref}",
-                "ΔAUC": f"{auc1 - auc0:+.3f}",
-                "LRT χ²": f"{chi:.2f}", "df": df,
-                "p (LRT)": _fmt_p(p_lrt),
-            })
+    for _, r in horserace.iterrows():
+        if r["predictor"] not in HR_LABELS:
+            continue
+        nested_rows.append({
+            "Outcome":   r["outcome"],
+            "Model":     MODEL_LABELS.get(r["model"], r["model"]),
+            "Parameter": HR_LABELS[r["predictor"]],
+            "N": int(r["n"]), "N_cases": int(r["n_cases"]),
+            "OR":     f"{r['OR']:.2f}",
+            "95% CI": f"[{r['OR_lo']:.2f}, {r['OR_hi']:.2f}]",
+            "p":      _fmt_p(float(r["p"])),
+            "_OR": float(r["OR"]), "_lo": float(r["OR_lo"]),
+            "_hi": float(r["OR_hi"]), "_p": float(r["p"]),
+        })
     df_nested = pd.DataFrame(nested_rows)
-    df_comp   = pd.DataFrame(model_comp_rows)
+
+    model_comp_rows = []
+    for _, r in lrt.iterrows():
+        ref = MODEL_LABELS.get(r["reduced"], r["reduced"])
+        comp = MODEL_LABELS.get(r["full"], r["full"])
+        model_comp_rows.append({
+            "Outcome": r["outcome"],
+            "Comparison": f"{comp} vs {ref}",
+            "ΔAUC":  f"{r['delta_auc']:+.3f}",
+            "LRT χ²": f"{r['chi2']:.2f}",
+            "df":    int(r["df"]),
+            "p (LRT)": _fmt_p(float(r["p"])),
+        })
+    df_comp = pd.DataFrame(model_comp_rows)
 
     # Tables S5.1–S5.3 (between-person nested per outcome)
     for outcome_lbl, fname in [("Depression",   "TableS5_1_dep_nested"),

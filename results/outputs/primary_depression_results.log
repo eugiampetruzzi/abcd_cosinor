@@ -1,20 +1,20 @@
 ==============================================================================
 Primary analyses · DSM Depression
 ==============================================================================
-  Analytic cohort: n = 4,205, incident cases = 463 (11.0%)
+  Analytic cohort: n = 2,467, incident cases = 463 (18.8%)
 
 --- Between-person analyses ---
   (no multiple-comparison correction across the three rhythm parameters)
-  Typical-day mesor         OR = 1.12, 95% CI [1.01, 1.24], p = 0.0249
-  Typical-day amplitude     OR = 1.02, 95% CI [0.93, 1.13], p = 0.618
-  Typical-day acrophase     OR = 0.96, 95% CI [0.88, 1.06], p = 0.427
+  Typical-day mesor         OR = 1.31, 95% CI [1.17, 1.46], p = 1.6e-06
+  Typical-day amplitude     OR = 0.90, 95% CI [0.81, 1.00], p = 0.0447
+  Typical-day acrophase     OR = 1.09, 95% CI [0.98, 1.20], p = 0.11
 
 --- Within-person analyses ---
-  SD daily mesor            n = 3703  cases = 410  univariate OR = 1.12, 95% CI [1.02, 1.23], p = 0.0136
-  SD daily mesor            joint with mesor: feature OR = 1.13 [1.03, 1.23], p = 0.00953; mesor OR = 1.15, p = 0.00898
-  SD daily amplitude        n = 3703  cases = 410  univariate OR = 1.04, 95% CI [0.94, 1.14], p = 0.468
-  SD daily amplitude        joint with mesor: feature OR = 1.07 [0.97, 1.18], p = 0.187; mesor OR = 1.16, p = 0.00663
-  SD daily acrophase        n = 3703  cases = 410  univariate OR = 1.15, 95% CI [1.05, 1.25], p = 0.00249
-  SD daily acrophase        joint with mesor: feature OR = 1.15 [1.05, 1.25], p = 0.00275; mesor OR = 1.15, p = 0.0118
+  SD daily mesor            n = 2231  cases = 410  univariate OR = 1.18, 95% CI [1.07, 1.31], p = 0.000942
+  SD daily mesor            joint with mesor: feature OR = 1.20 [1.09, 1.33], p = 0.000243; mesor OR = 1.34, p = 8.75e-07
+  SD daily amplitude        n = 2231  cases = 410  univariate OR = 1.03, 95% CI [0.93, 1.14], p = 0.601
+  SD daily amplitude        joint with mesor: feature OR = 1.09 [0.98, 1.22], p = 0.0948; mesor OR = 1.35, p = 7.73e-07
+  SD daily acrophase        n = 2231  cases = 410  univariate OR = 1.29, 95% CI [1.17, 1.42], p = 6.76e-07
+  SD daily acrophase        joint with mesor: feature OR = 1.29 [1.17, 1.43], p = 8.14e-07; mesor OR = 1.33, p = 1.61e-06
 
-Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/primary_depression_results.tsv
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/tables/primary_depression_results.tsv

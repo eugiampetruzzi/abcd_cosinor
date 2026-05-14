@@ -1,0 +1,67 @@
+==============================================================================
+HTN M4 HR amplitude stability diagnostics
+==============================================================================
+  HTN M4 analytic n = 1,459, cases = 263
+
+  Analytic M4 HR amplitude:  OR = 0.561 [0.452, 0.696], p = 1.4e-07
+
+--- 1. Family-clustered bootstrap (B = 1000, resample families with replacement) ---
+    n unique families = 1,302
+    bootstrap  200/1000  (median so far = 0.562)
+    bootstrap  400/1000  (median so far = 0.561)
+    bootstrap  600/1000  (median so far = 0.561)
+    bootstrap  800/1000  (median so far = 0.559)
+    bootstrap 1000/1000  (median so far = 0.559)
+    successful refits: 1000/1000  (failures: 0)
+    bootstrap OR median = 0.559
+    bootstrap OR mean   = 0.558  (SE = 0.062)
+    bootstrap 95% CI    = [0.444, 0.684]
+    bootstrap 99% CI    = [0.415, 0.728]
+    % bootstraps with OR < 1: 100.0%
+    % bootstraps with OR < 0.7: 98.8%
+
+--- 2. Per-observation influence (one-step dfBetas) ---
+    Unclustered M4 HR amplitude OR (reference): 0.561
+    Top 10 |dfBetas| on HR amplitude:
+      row   981  pid=sub-JFZJH8VH  onset=0  hr_amp_z = +0.59  |dfBeta| = 0.2792
+      row   183  pid=sub-PA1L60YE  onset=1  hr_amp_z = -0.67  |dfBeta| = 0.1883
+      row    32  pid=sub-4H6UC2YG  onset=1  hr_amp_z = +0.29  |dfBeta| = 0.1757
+      row  1013  pid=sub-KC7ZC9VX  onset=0  hr_amp_z = -2.03  |dfBeta| = 0.1616
+      row   235  pid=sub-WL8Y25AK  onset=1  hr_amp_z = +1.49  |dfBeta| = 0.1351
+      row   165  pid=sub-M9LBHANT  onset=1  hr_amp_z = +0.91  |dfBeta| = 0.1322
+      row   261  pid=sub-ZKP2G8H4  onset=1  hr_amp_z = +1.13  |dfBeta| = 0.1313
+      row   102  pid=sub-DCFU6FKR  onset=1  hr_amp_z = +1.39  |dfBeta| = 0.1245
+      row   222  pid=sub-V5YL6694  onset=1  hr_amp_z = +3.14  |dfBeta| = 0.1232
+      row   768  pid=sub-CT3X58XN  onset=0  hr_amp_z = -1.67  |dfBeta| = 0.1212
+    Drop top  5 influential:  n = 1,454, OR = 0.537 [0.435, 0.664], p = 8.65e-09
+    Drop top 10 influential:  n = 1,449, OR = 0.498 [0.403, 0.615], p = 1.06e-10
+    Drop top 20 influential:  n = 1,439, OR = 0.439 [0.354, 0.544], p = 6.94e-14
+
+--- 3. Leave-one-site-out ---
+    n sites = 21; participants with site missing: 0
+    Excluded            n  cases      OR               95% CI          p
+    1               1,428    256   0.565 [0.453, 0.706]   4.61e-07
+    2               1,370    259   0.572 [0.461, 0.711]   4.42e-07
+    3               1,444    263   0.556 [0.448, 0.690]   1.05e-07
+    4               1,361    239   0.532 [0.426, 0.666]   3.26e-08
+    5               1,422    256   0.552 [0.443, 0.687]   1.18e-07
+    6               1,409    254   0.579 [0.466, 0.719]   7.85e-07
+    7               1,415    257   0.564 [0.454, 0.700]   2.25e-07
+    8               1,428    263   0.565 [0.455, 0.701]   2.23e-07
+    9               1,432    261   0.561 [0.451, 0.697]   2.03e-07
+    10              1,384    253   0.581 [0.468, 0.722]   9.63e-07
+    11              1,410    243   0.569 [0.454, 0.713]   9.61e-07
+    12              1,344    236   0.550 [0.438, 0.690]   2.38e-07
+    13              1,370    227   0.533 [0.422, 0.673]   1.33e-07
+    14              1,318    236   0.536 [0.426, 0.674]   9.21e-08
+    15              1,448    263   0.561 [0.452, 0.695]   1.35e-07
+    16              1,315    247   0.570 [0.457, 0.711]   6.21e-07
+    17              1,378    248   0.569 [0.456, 0.711]   6.64e-07
+    18              1,369    248   0.578 [0.465, 0.719]   8.86e-07
+    19              1,397    251   0.572 [0.460, 0.713]   5.96e-07
+    20              1,334    247   0.552 [0.442, 0.690]    1.8e-07
+    21              1,404    253   0.555 [0.447, 0.691]   1.21e-07
+
+    Leave-one-site-out OR range: [0.532, 0.581]; median = 0.564
+
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/sensitivity/htn_amplitude_stability.md

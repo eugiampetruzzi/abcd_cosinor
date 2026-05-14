@@ -1,20 +1,20 @@
 ==============================================================================
 Primary analyses · Hypertension
 ==============================================================================
-  Analytic cohort: n = 2,669, incident cases = 270 (10.1%)
+  Analytic cohort: n = 2,274, incident cases = 270 (11.9%)
 
 --- Between-person analyses ---
   (no multiple-comparison correction across the three rhythm parameters)
-  Typical-day mesor         OR = 1.30, 95% CI [1.13, 1.49], p = 0.000199
-  Typical-day amplitude     OR = 0.95, 95% CI [0.83, 1.08], p = 0.426
-  Typical-day acrophase     OR = 1.17, 95% CI [1.03, 1.33], p = 0.0196
+  Typical-day mesor         OR = 1.53, 95% CI [1.33, 1.77], p = 5.31e-09
+  Typical-day amplitude     OR = 0.82, 95% CI [0.72, 0.94], p = 0.00391
+  Typical-day acrophase     OR = 1.19, 95% CI [1.04, 1.36], p = 0.0103
 
 --- Within-person analyses ---
-  SD daily mesor            n = 2323  cases = 221  univariate OR = 1.08, 95% CI [0.94, 1.24], p = 0.287
-  SD daily mesor            joint with mesor: feature OR = 1.09 [0.95, 1.26], p = 0.207; mesor OR = 1.28, p = 0.00135
-  SD daily amplitude        n = 2323  cases = 221  univariate OR = 1.04, 95% CI [0.92, 1.18], p = 0.517
-  SD daily amplitude        joint with mesor: feature OR = 1.10 [0.97, 1.24], p = 0.15; mesor OR = 1.30, p = 0.00093
-  SD daily acrophase        n = 2323  cases = 221  univariate OR = 1.09, 95% CI [0.97, 1.22], p = 0.136
-  SD daily acrophase        joint with mesor: feature OR = 1.08 [0.97, 1.21], p = 0.163; mesor OR = 1.27, p = 0.00194
+  SD daily mesor            n = 2042  cases = 221  univariate OR = 1.20, 95% CI [1.04, 1.38], p = 0.0128
+  SD daily mesor            joint with mesor: feature OR = 1.24 [1.08, 1.43], p = 0.00224; mesor OR = 1.54, p = 8.63e-08
+  SD daily amplitude        n = 2042  cases = 221  univariate OR = 0.99, 95% CI [0.87, 1.13], p = 0.92
+  SD daily amplitude        joint with mesor: feature OR = 1.09 [0.96, 1.25], p = 0.196; mesor OR = 1.53, p = 2.76e-07
+  SD daily acrophase        n = 2042  cases = 221  univariate OR = 1.26, 95% CI [1.11, 1.43], p = 0.000295
+  SD daily acrophase        joint with mesor: feature OR = 1.27 [1.11, 1.45], p = 0.000474; mesor OR = 1.50, p = 3.59e-07
 
-Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_github/results/tables/primary_hypertension_results.tsv
+Wrote /Users/eu/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/ABCD Actigraphy Resource Paper/fitbit_prediction_superhealthy/results/tables/primary_hypertension_results.tsv
