@@ -303,7 +303,6 @@ def section_2() -> dict:
                      sep="\t", index=False)
 
     # Table S2.3 — within-person SD distributions
-    sys.path.insert(0, str(PREDICTION / "code"))
     from utils.cooccurrence import load_cooccurrence_frame
     coocc = load_cooccurrence_frame()
     rows = []
@@ -714,80 +713,6 @@ def section_5() -> dict:
 
     df_comp.to_csv(TABLE_DIR / "TableS5_7_model_comparison.tsv",
                      sep="\t", index=False)
-
-    # Figure S5.1 — Forest plot HR params across nested models
-    fig, axes = plt.subplots(1, 3, figsize=(13, 4.5), sharey=True)
-    for ax, outcome in zip(axes, ["Depression", "Obesity", "Hypertension"]):
-        sub = df_nested[df_nested["Outcome"] == outcome].copy()
-        models_order = ["M1: HR only", "M2: HR + activity",
-                          "M3: HR + sleep", "M4: HR + activity + sleep"]
-        params = ["HR mesor", "HR amplitude", "HR acrophase"]
-        offsets = {"HR mesor": -0.25, "HR amplitude": 0.0, "HR acrophase": +0.25}
-        param_colors = {"HR mesor": "#1f77b4", "HR amplitude": "#ff7f0e",
-                          "HR acrophase": "#2ca02c"}
-        for p in params:
-            xs = []; los = []; his = []
-            for m in models_order:
-                rr = sub[(sub["Model"] == m) & (sub["Parameter"] == p)]
-                if rr.empty:
-                    xs.append(np.nan); los.append(np.nan); his.append(np.nan)
-                else:
-                    xs.append(rr.iloc[0]["_OR"])
-                    los.append(rr.iloc[0]["_lo"])
-                    his.append(rr.iloc[0]["_hi"])
-            xs = np.array(xs); los = np.array(los); his = np.array(his)
-            y = np.arange(len(models_order)) + offsets[p]
-            ax.errorbar(xs, y, xerr=[xs - los, his - xs], fmt="o-",
-                         color=param_colors[p], markersize=5, capsize=2,
-                         linewidth=1.4, label=p)
-        ax.axvline(1, color="gray", linestyle="--", linewidth=1)
-        ax.set_xscale("log")
-        ax.set_yticks(np.arange(len(models_order)))
-        ax.set_yticklabels(models_order)
-        ax.invert_yaxis()
-        ax.set_xlabel("OR per SD")
-        ax.text(0.5, 1.02, outcome, transform=ax.transAxes,
-                  va="bottom", ha="center", fontsize=9, fontweight="bold")
-    # Single shared legend to the right of all panels
-    handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="center right", frameon=False,
-                bbox_to_anchor=(1.0, 0.5), fontsize=8)
-    fig.subplots_adjust(wspace=0.15, right=0.88, top=0.92)
-    fig.savefig(FIG_DIR / "FigS5_1_hr_across_nested.png", dpi=300,
-                bbox_inches="tight")
-    plt.close(fig)
-
-    # Figure S5.2 — Within-person SDs unadjusted vs adjusted
-    fig, axes = plt.subplots(1, 3, figsize=(13, 3.8), sharey=True)
-    for ax, outcome in zip(axes, ["Depression", "Obesity", "Hypertension"]):
-        sub = wp_adj[wp_adj["outcome"] == outcome].copy().reset_index(drop=True)
-        y = np.arange(len(sub))
-        for yi, r in sub.iterrows():
-            ax.errorbar(r["or_per_sd_base"], yi - 0.12,
-                         xerr=[[r["or_per_sd_base"]-r["ci_lo_base"]],
-                                [r["ci_hi_base"]-r["or_per_sd_base"]]],
-                         fmt="o", color="black", markersize=5, capsize=2)
-            ax.errorbar(r["or_per_sd_adj"], yi + 0.12,
-                         xerr=[[r["or_per_sd_adj"]-r["ci_lo_adj"]],
-                                [r["ci_hi_adj"]-r["or_per_sd_adj"]]],
-                         fmt="o", color=COL_CASE, markersize=5, capsize=2)
-        ax.axvline(1, color="gray", linestyle="--", linewidth=1)
-        ax.set_yticks(y); ax.set_yticklabels(sub["predictor_label"])
-        ax.invert_yaxis(); ax.set_xscale("log")
-        ax.set_xlabel("OR per SD")
-        ax.text(0.5, 1.02, outcome, transform=ax.transAxes,
-                  va="bottom", ha="center", fontsize=9, fontweight="bold")
-    # Single shared legend
-    handles = [plt.Line2D([], [], color="black", marker="o", linestyle="",
-                            label="Unadjusted"),
-                plt.Line2D([], [], color=COL_CASE, marker="o", linestyle="",
-                            label="Adjusted")]
-    fig.legend(handles=handles, loc="center right", frameon=False,
-                bbox_to_anchor=(1.0, 0.5), fontsize=8)
-    fig.subplots_adjust(wspace=0.15, right=0.88, top=0.92)
-    fig.savefig(FIG_DIR / "FigS5_2_wp_adjusted.png", dpi=300,
-                bbox_inches="tight")
-    plt.close(fig)
     return {}
 
 
@@ -1445,20 +1370,6 @@ def build_docx(meta: dict) -> None:
                "indicate p < .05.",
         p_cols=["p (LRT)"], star_p_lt_05=True,
     )
-    add_figure(FIG_DIR / "FigS5_1_hr_across_nested.png", "S5.1",
-                  "HR Rhythm Parameters Across Nested Behavioral Adjustments. "
-                  "Each panel shows one outcome (depression, obesity, "
-                  "hypertension). Markers and connecting lines show how the "
-                  "OR for each HR parameter (mesor, amplitude, acrophase) "
-                  "shifts across the four nested model specifications. "
-                  "Vertical dashed line at OR = 1. x-axis on log scale.")
-    add_figure(FIG_DIR / "FigS5_2_wp_adjusted.png", "S5.2",
-                  "Within-Person Rhythm SDs: Unadjusted Versus "
-                  "Behavior-Adjusted Odds Ratios. "
-                  "Black markers: unadjusted models. Red markers: models "
-                  "adjusted for scale-matched within-person behavioral SDs. "
-                  "Vertical dashed line at OR = 1. x-axis on log scale.")
-
     doc.save(str(SUPP_DIR / "supplement.docx"))
     print(f"\nSupplement saved to: {SUPP_DIR / 'supplement.docx'}")
 
