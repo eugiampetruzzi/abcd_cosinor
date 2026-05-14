@@ -1,7 +1,5 @@
 # Heart rate rhythm from a wearable predicts depression and cardiometabolic illness in adolescence
 
-Code for *Heart rate rhythm from a wearable predicts depression and cardiometabolic illness in adolescence* (Giampetruzzi, Kircanski, & Gotlib, under review).
-
 ## Layout
 
 ```
