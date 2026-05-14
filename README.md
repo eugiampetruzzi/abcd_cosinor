@@ -17,6 +17,17 @@ figures/           main-text figures (PNG, PDF, SVG)
 supplement/        supplement.docx + tables/ + figures/ (300+ DPI PNGs)
 ```
 
+## Setup
+
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+## Data
+
+Data used in this study are available as part of the Adolescent Brain Cognitive Development (ABCD) Study, Release 6.0 (https://doi.org/10.82525/jy7n-g441) 
+
 ## Pipeline
 
 | Script | Purpose |
@@ -40,22 +51,4 @@ supplement/        supplement.docx + tables/ + figures/ (300+ DPI PNGs)
 
 Run a script from the repo root: `python code/analyses/01_sample_and_incidence.py`.
 
-## Conventions
 
-- Predictors are per-1-SD z-scored within each analytic frame.
-- Logistic onset models include age and sex fixed effects and family-clustered SEs on ABCD family ID (`utils.modeling.fit_logistic_cluster`).
-- Outcome flags: `dsm_dep_65` (CBCL DSM-Depression T >= 65), `obese_85` (CDC BMI percentile >= 85), `htn` (SBP/DBP >= 95th percentile or >=130/80 for ages >= 13).
-- Incident case: first observed elevation at Wave 3 or Wave 4 with documented absence of elevation at every earlier observed wave.
-- Single HC group (N = 2,004): below threshold for depression, obesity, AND hypertension at every observed wave with confirmed below-threshold follow-up CBCL, BMI, and BP at W3 or W4.
-
-## Data dependencies
-
-ABCD raw data is access-restricted and not redistributed here. 
-
-## Setup
-
-```
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
