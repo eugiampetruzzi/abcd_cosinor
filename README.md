@@ -1,8 +1,6 @@
-# abcd_cosinor
+# Heart rate rhythm from a wearable predicts depression and cardiometabolic illness in adolescence
 
-Companion code for *Heart rate rhythm from a wearable predicts depression and cardiometabolic illness in adolescence* (Giampetruzzi, Kircanski, & Gotlib).
-
-Wave-2 Fitbit data from the ABCD Novel Technologies sub-study are used to fit per-participant single-component cosinor models. Three rhythm parameters (mesor, amplitude, acrophase) and three within-person stability indices (SD of daily mesor, amplitude, acrophase) are tested as prospective predictors of incident depression, obesity, and hypertension at Waves 3-4.
+Code for *Heart rate rhythm from a wearable predicts depression and cardiometabolic illness in adolescence* (Giampetruzzi, Kircanski, & Gotlib, under review).
 
 ## Layout
 
@@ -52,24 +50,7 @@ Run a script from the repo root: `python code/analyses/01_sample_and_incidence.p
 
 ## Data dependencies
 
-ABCD raw data is access-restricted and not redistributed here. The pipeline expects:
-
-```
-~/Library/CloudStorage/OneDrive-Stanford/Research Projects/1 - Data/ABCD/
-  Release 6.1/Demographics/phenotype/ab_g_stc.tsv
-  ABCD Actigraphy Resource Paper/
-    outcomes/master_outcomes_{mental_health,physical_health}.parquet
-    qc/stage1_full_cohort_sessions.tsv
-    qc/stage3_validation/mesor_vs_clinic_hr.tsv
-    dairc/derivatives/cosinor_features/per_wave/ses-02A/participant_blups.parquet
-    dairc/derivatives/cosinor_features/pooled/participant_blups.parquet
-    dairc/derivatives/family_structure.parquet
-    dairc/derivatives/hourly_profiles/ses-02A.parquet
-    dairc/derivatives/within_person_sensitivity/within_person_features.csv
-    dairc/derivatives/fitbit_summary/per_wave_summary.parquet
-```
-
-Adjust `code/utils/paths.py` if your local paths differ.
+ABCD raw data is access-restricted and not redistributed here. 
 
 ## Setup
 
@@ -78,11 +59,3 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-
-## Citation
-
-If you use this code, please cite the manuscript (DOI added on acceptance).
-
-## License
-
-MIT.
