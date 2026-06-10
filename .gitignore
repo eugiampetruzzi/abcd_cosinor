@@ -1,0 +1,19 @@
+# ABCD data are access-restricted (NDA) — never commit data or derivatives
+*.parquet
+*.tsv
+*.csv
+*.docx
+*.pdf
+*.png
+*.svg
+
+# but keep example/spec CSVs if any are intentionally tracked:
+!requirements.txt
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.Rhistory
+.RData
